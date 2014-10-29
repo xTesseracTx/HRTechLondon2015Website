@@ -1,0 +1,561 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+<meta name="designer" content="Designed by: Judit Bernat - juditbernat.mail@gmail.com ">
+<meta name="author" content="Develped by: TesseracT - bottyan.tamas@web-developer.hu">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HR Tech Europe 2014 | Europe's #1 Conference on the Future of HR</title>
+
+<!--	Include Foundation -->
+<link rel="stylesheet" href="css/foundation.css" />
+<script src="js/foundation/foundation.orbit.js"></script>
+<script src="js/vendor/modernizr.js"></script>
+<!--Include Google fonts -->
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+<!--Include Font Awesome -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- RANDOM FADE JS JQUERY libraries -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> 
+
+<!--	Include Custom CSS Definitions -->
+<link rel="stylesheet" href="css/custom.css" />
+
+<!-- TESTIMONIALS FADE-IN FADE-OUT -->
+<script src="js/testimonials-fadein-fadeout.js"></script>
+
+<style type="text/css"> 
+.testimonial-logo img{
+  margin: 0 auto;
+}
+.randomfade-div {
+  display: none;
+  margin-top: 50px;
+}
+
+
+#teaser-text, .randomfade-div {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width:480px){
+  #speaker-button, #myModal-apply-as-speaker .submitbutton {
+    font-size: 16px;
+  }
+}
+
+@media (max-width:640px){
+  	#download-button {
+		padding-top: 15px;
+	}
+	#newsletterform-container .small-12 {
+		margin-bottom: 15px;
+	}
+	#newsletterform-container .small-10 {
+		width: 60%;
+	}
+	#newsletterform-container .small-2 {
+		width: 20%;
+	}	
+}
+@media (min-width:1080px){
+  #follow-us {
+    width: 300px;
+  }
+  #general-inquiries {
+    width: 200px;
+  }
+  #sponsorship {
+    width: 230px;
+  }
+  #download-brochure {
+    width: 270px;
+  }
+  #copyright {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  #terms {
+    text-align: right;
+  }
+  #myForm .row, #blackfooter .row, #greyfooter-container .row {
+    max-width: 1000px;
+  }
+
+@media (max-width:1200px){
+  	#download-button {
+		padding-top: 15px;
+	}
+}
+}
+@media (max-width:640px){
+  #follow-us-container, #general-inquiries-container, #sponsorship-container, #download-brochure-container,
+  #footer-hrtech-logo-container, #copyright-container, #terms-container {
+    width: 260px;
+    margin: 10px auto;
+    text-align: center;
+  }
+  #follow-us-container, #general-inquiries-container {
+    margin-top: 10px;
+  }
+  #download-button {
+    margin-left: 12px;
+  }
+  #terms-container {
+    text-align: center;
+  }
+}
+
+.reveal-modal {
+  background-color: #fff;
+  text-align: center;
+  min-height: 600px;
+}
+.reveal-modal h2{
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 50px;
+}
+@media (max-width:580px){
+  .reveal-modal {
+    width: 100%;
+  }
+}
+#myModal-apply-as-speaker .formlabel {
+  color: #000;
+}
+
+
+.close-reveal-modal img {
+	position: relative;
+	top: -35px;
+	right: -35px;
+}
+@media (max-width:640px){
+  .close-reveal-modal img {
+	top: 0px;
+	right: 0px;
+}
+}
+@media (max-width:380px){
+  .close-reveal-modal img {
+	width: 40px;
+        height: 40px;
+}
+}
+
+.orbit-slide-number, .orbit-prev, .orbit-next, .orbit-timer {
+	display:none;
+}
+
+</style>
+
+</head>
+<body>
+<!-- Declare the Off Canvas Menu Wrapper -->
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap"> 
+    <!--END Declare the Off canvas menu Wrapper --> 
+    <!-- Off Canvas Menu Toggler 
+    <nav class="tab-bar">
+      <div class="left-small"><img src="img/hrtech-logo-small.png" alt="hrtech logo"></div>
+      <div class="right-small" id="offcanvas-toggler" > <a class="right-off-canvas-toggle"  href="#"><i class="fa fa-bars"></i> <span >MENU </span></a> </div>
+    </nav>
+    <!-- Off Canvas Menu Toggler --> 
+    <!--OFF CANVAS MENU 
+    <aside class="right-off-canvas-menu">
+      <ul>
+        <li><a href="http://london.hrtecheurope.com">London</a></li>
+        <li > <a href="http://amsterdam.hrtecheurope.com">Amsterdam</a> </li>
+        <li > <a href="http://hrneurope.com">hrn europe</a> </li>
+        <li > <a href="http://blog.hrtecheurope.com">blog</a> </li>
+      </ul>
+    </aside>
+    <!--END OFF CANVAS MENU --> 
+    
+    <!-- DESKTOP NAVIGATION MENU
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li> <a href="#"><img id="hrtech-logo" src="img/hrtech-logo-small.png" alt="HRTech Logo"></a> </li>
+        <li class="toggle-topbar"><a href="#"><span>Menu</span></a></li>
+      </ul>
+      <div class="top-bar-section">
+        <ul class="left">
+          <li><a href="http://london.hrtecheurope.com">London</a></li>
+          <li > <a href="http://amsterdam.hrtecheurope.com">Amsterdam</a> </li>
+          <li > <a href="http://hrneurope.com">hrn europe</a> </li>
+          <li > <a href="http://blog.hrtecheurope.com">blog</a> </li>
+        </ul>
+      </div>
+    </nav>
+    <!--END NAVIGATION MENU --> 
+    <!--HEADER-->
+    <div id="header-container"> <img style="padding:0 15px;" src="img/hrtech-logo.png" alt="hrtech logo">
+      <h1>UNLEASH YOUR PEOPLE!</h1>
+      <h2>The World's Fastest Growing HR Event</h2>
+      <a href="#" data-reveal-id="myModal" >
+      <div style="max-width:400px;" class="header-button"> Download Brochure </div>
+      </a> </div>
+     <div class="colors-wrapper">
+      <div class="columns colored-stripe red" ></div>
+      <div class="columns colored-stripe blue" ></div>
+      <div class="columns colored-stripe yellow" ></div>
+      <div class="columns colored-stripe green" ></div>
+    </div>
+    <!--END HEADER--> 
+    <!-- TEASER -->
+    <div class="row" >
+      <div class="large-12 columns">
+        <h1 id="teaser-headline">GAM<span style="letter-spacing: 5px;">E<span style="position: relative; top: -10px;">-</span></span>CHANGING HR</h1>
+        <p class="text-center" id="teaser-text">HR Tech Europe is Europe's most important event on how software, technology systems and collaborative tools are bringing about surmountable change in the way people and organizations work.</p>
+      </div>
+    </div>
+    <div id="teaser-divider"></div>
+    <!--END TEASER --> 
+    <!-- MAIN STAGE -->
+    <div id="mainstage-wraper">
+    <h1 id="mainstage-headline">MAIN STAGE</h1>
+    <div class="row" id="mainstage-wrapper">
+      <div  class="large-4 medium-4 columns speaker-wrapper"> <img src="img/speaker-peterh.jpg" alt="Peter Hinsen - Aeross">
+        <div class="speaker-info">Founder and CEO <br>
+at nexxworks </div>
+        <img src="img/nexxworks.png" alt="top50thinkers"> </div>
+      <div class="large-4 medium-4 columns speaker-wrapper"> <img src="img/speaker-rachelb.jpg" alt="Rachel Botsman - Ozolab">
+        <div class="speaker-info">Named as one of the ‘Most Creative People in Business’</div>
+        <img src="img/fastcompany.png" alt="fastcompany"> </div>
+      <div class="large-4 medium-4 columns speaker-wrapper"> <img src="img/speaker-costasm.jpg" alt="Costas Markides - London Business School">
+        <div class="speaker-info">Ranked Top 50 Most Influential Management Thinkers</div>
+        <img src="img/thinkers50.png" alt="top50thinkers"> </div>
+    </div>
+    <a href="#">
+    <div id="speaker-button" data-reveal-id="myModal-apply-as-speaker" >apply as a speaker</div>
+    </a> 
+    </div>
+    <!--END MAIN STAGE --> 
+    <!--TESTIMONIAL -->
+    <div id="testimonial-divider"></div>
+    <div id="testimonial-container">
+      <!-- TESTIMONIALS  -->
+ <div class="testimonials-fade-container">
+      <ul style="margin-top:70px;" data-orbit>
+  <li data-orbit-slide="1">
+     
+                  <p>“HR Tech Europe is the best European conference on HR and Technology, delivering timely, thought-provoking keynotes, panels and networking opportunities with senior leaders from around the globe.“</p>
+          <div class="testimonial-logo"><img class="text-center" src="img/bersin-logo.png" alt="Bersin by Deloitte Logo"> </div>
+       
+  </li>
+  <li data-orbit-slide="2">
+ 
+          <p>“Great experience again for us – we have met some of our biggest customers here and some strong new prospects to follow up on!”</p>
+          <div class="testimonial-logo"><img class="text-center" src="img/sf-logo.png"  alt="Bersin by Deloitte Logo"> </div>
+          
+  </li>
+  <li data-orbit-slide="3">
+    
+          <p>“If you want to meet the guys shaping the new HR, and learn the innovations that will rock the future of the field, sign up with HRN Europe.”</p>
+          <div class="testimonial-logo"><img class="text-center" src="img/rbl-logo.png"  alt="Bersin by Deloitte Logo"> </div>
+          
+  </li>
+</ul>
+      
+      
+       
+      </div>
+
+    
+      
+
+      <img src="img/london-view.png" alt="london view"> 
+    
+    
+    
+    
+    
+    
+    </div>
+    <!--END TESTIMONIAL --> 
+    <!-- IMAGES AND CLIENTS-->
+    <img src="img/conference-images.jpg" alt="HRTech Conference">
+    <div id="sponsor-container">
+      <h1 id="sponsor-headline">our clients</h1>
+      <div class="row text-center">
+        <div class="sponsor-logo"><a href="http://www.cornerstoneondemand.com/" target="_blank"><img src="img/cornerstone-logo.png" alt="cornerstone"></a></div>
+        <div class="sponsor-logo"><a href="http://www.workday.com/uk/" target="_blank"><img src="img/workday-logo.png" alt="workday"></a></div>
+        <div class="sponsor-logo"><a href="http://www.oracle.com/hcm" target="_blank"><img src="img/oracle-logo.png" alt="oracle"></a></div>
+        <div class="sponsor-logo"><a href="http://www.ibm.com/us/en/" target="_blank"><img src="img/ibm-logo.png" alt="ibm"></a></div>
+        <div class="sponsor-logo"><a href="http://www.successfactors.com/en_us.html" target="_blank"><img src="img/successfactorslogo.png" alt="successfactors"></a></div>
+        <div class="sponsor-logo"><a href="http://www.kronos.com/" target="_blank"><img src="img/kronos-logo.png" alt="kronos"></a></div>
+        <div class="sponsor-logo"><a href="http://www.adp.com/" target="_blank"><img src="img/adp-logo.png" alt="adp"></a></div>
+      </div>
+    </div>
+    
+    <!--END IMAGES AND CLIENTS--> 
+    <!--2FOR1 FORM -->
+   
+    <div id="formcontainer-divider"></div>
+    <div id="formcontainer">
+     <a id="2for1"></a>
+      <h1 id="formheadline">APPLY FOR TICKETS</h1>
+      <div id="formdivider"></div>
+      <ul id="formlist">
+        <li> + Unlimited conference access</li>
+        <li>+ Today's leading HR speakers</li>
+        <li>+ Full access to exhibition space</li>
+        <li>+ Curated dinner parties</li>
+        <li>+ Social events hosted by our sponsors</li>
+      </ul>
+      <!-- CONTACT FORM -->
+      
+      <form id="myForm" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+        <input type="hidden" name="oid" value="00DD0000000nwgk" />
+        <input type="hidden" name="retURL" value="http://london.hrtecheurope.com/thankyou.html" />
+       
+        <div class="row">
+          <div class="large-6 medium-6 small-12 column">
+            <label class="formlabel" >Name</label>
+            <input id="first_name" type="text" name="name"  title="Name"  placeholder="" />
+            <label class="formlabel" for="email">Email</label>
+            <input id="email" type="text" name="email" placeholder=""/>
+            <label class="formlabel" for="company">Company</label>
+            <input id="company" type="text" name="company" placeholder="" />
+            <label class="formlabel" for="phone">Telephone</label>
+            <input id="phone" type="text" name="phone" placeholder="" />
+          </div>
+          <div class="large-6 medium-6 small-12 column">
+            <label class="formlabel" >Your Message or Question (optional)</label>
+            <textarea name="description" placeholder="Please Type your message into this field." style="height:370px;"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 medium-12 small-12">
+            <input class="submitbutton" type="submit" name="submit" value="REGISTER NOW" />
+          </div>
+        </div>
+        <div id="newsletterform-divider"></div>
+      </form>
+    </div>
+    <!--END CONTACT FORM --> 
+    
+
+  
+  <!--END 2FOR1 FORM --> 
+  <!--NEWSLETTER FORM -->
+  <div id="newsletterform-container">
+  
+      <div class="large-6 medium-6 small-12 column" ><span id="newsletterform-headline">GET UPDATES AND SPECIAL PRICING</span></div>
+      <div class="large-6 medium-6 small-12 column" >
+        <form id="newsletterform" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+          <input type="hidden" name="oid" value="00DD0000000nwgk" />
+          <input type="hidden" name="retURL" value="http://london.hrtecheurope.com/thankyou.html" />
+         <div class="large-6 medium-6 small-12 column" style="padding:0;">
+          <input style="height:55px;" id="emailaddress"  type="text" name="emailaddress" placeholder="Enter Your Email Address"/>
+          </div>
+          <div class="large-2 medium-2 small-12 column left" style="padding:0;">
+          <input id="newsletter-submit" type="submit" name="submit" value="Sign up" />
+          </div>
+        </form>
+      
+    </div>
+  </div>
+   <div class="colors-wrapper">
+      <div class="columns colored-stripe red" ></div>
+      <div class="columns colored-stripe blue" ></div>
+      <div class="columns colored-stripe yellow" ></div>
+      <div class="columns colored-stripe green" ></div>
+    </div>
+  <!--END NEWSLETTER FORM -->
+  <!--BLACKFOOTER-->
+  <div id="blackfooter">
+  <div class="row" >
+    
+  <div class="large-3 medium-3 small-12 columns" id="follow-us">
+    <div id="follow-us-container">
+    <p class="blackfooter-element-title">Follow us</p>
+   <a href="https://www.facebook.com/hrtecheu" target="_blank"><div class="large-3 small-3 column" id="facebook">
+  
+   </div></a>
+    <a href="https://twitter.com/hrtecheurope" target="_blank"><div class="large-3  small-3 column" id="twitter">
+  
+   </div></a>
+   
+   <a href="http://www.linkedin.com/groups/HR-Technology-Europe-Human-Resources-3930182/about" target="_blank"><div class="large-3  small-3 column" id="linkedin">
+  
+   </div></a>
+   
+    <a href="https://www.flickr.com/photos/71007493@N05/" target="_blank"><div class="large-3  small-3 column" id="flickr">
+  
+   </div></a>
+    </div>
+  </div>
+  
+  
+  <div class="large-3 medium-3 small-12 columns" id="general-inquiries">
+    <div id="general-inquiries-container">
+      <p class="blackfooter-element-title">General Inquiries</p>
+      <p class="blackfooter-text"><i class="fa fa-phone"></i>+36 1 201 1469<br>
+    
+       <i class="fa fa-envelope"></i>hrn@hrneurope.com</p>
+      </div>
+    </div>
+      
+     <div class="large-3 medium-3 small-12 columns" id="sponsorship">
+        <div id="sponsorship-container">
+          <p class="blackfooter-element-title">Sponsorship</p>
+          <p class="blackfooter-text"><i class="fa fa-phone"></i>+36 1 201 1469<br>
+          <i class="fa fa-envelope"></i>sponsor@hrneurope.com</p>
+        </div>
+    </div>
+  
+  
+   <div class="large-3 medium-3 small-12 columns" id="download-brochure">
+    <div id="download-brochure-container">
+      <img src="img/download-divider.png" alt="divider"><br>
+      <a href="#" data-reveal-id="myModal" ><div id="download-button">Download Brochure</div></a>
+    </div>
+       <div id="myModal" class="reveal-modal" data-reveal>
+        
+        
+          
+          <h2>Download brochure</h2>
+          <p class="lead">In order to download our brochure please type in your email address into the field below:</p>
+          <div id="myModal-container" style="margin: 0 auto; max-width:670px;"> <form id="myForm-modal" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+             <input type="hidden" name="oid" value="00DD0000000nwgk" />
+             <input type="hidden" name="retURL" value="http://london.hrtecheurope.com/PDF/2015_HR_Tech_London_Sponsorship.pdf" />
+            
+              <div class="large-9 medium-8 small-12 column" style="padding:0;">
+               <input id="email-modal"  type="text" style="border:0;" name="email" placeholder="Enter Your Email Address"/>
+               </div>
+               <div class="large-3 medium-4 small-12 column " style="padding:0;">
+               <input id="newsletter-submit-modal" type="submit" name="submit" value="Download" />
+               
+               </div>
+            </form>
+          </div>
+       <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+  </div>
+   
+  </div>
+</div>
+
+  
+  <!--END BLACKFOOTER-->
+  <!--GREYFOOTER-->
+  <div id="greyfooter-container">
+  <div class="row">
+    <div class="large-4 medium-4 small-12 columns" id="footer-hrtech-logo">
+      <div id="footer-hrtech-logo-container">    
+        <img src="img/footer-hrtogo.png" alt="hrtech logo">
+      </div>
+    </div>
+    <div class="large-4 medium-4 small-12 columns" id="copyright">
+      <div id="copyright-container">
+        <p class="greyfooter-text">Copyright © 2014 HRN Europe. All Rights Reserved.</p> 
+      </div>
+    </div>
+    <div class="large-4 medium-4 small-12 columns" id="terms">
+      <div id="terms-container">
+        <p class="greyfooter-text">Terms and Conditions</p> 
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  
+  <!--END GREYFOOTER-->
+  
+  <!-- close the off-canvas menu --> 
+  <a class="exit-off-canvas"></a> </div>
+</div>
+
+       <div id="myModal-apply-as-speaker" class="reveal-modal" data-reveal>
+        <div class="close-reveal-modal" data-dismiss="modal" aria-hidden="true"><img src="img/modal-close.png" alt="modal-close-button"></div>
+        <h2>Apply as Speaker</h2>
+            <form action="http://hrneurope.us4.list-manage.com/subscribe/post?u=c03cb8f11b1f34771fdd1747c&amp;id=3acb436a93" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"  target="_blank" novalidate>
+                        
+              <div class="row">
+                <div class="large-6 medium-6 small-12 column">
+                  <label class="formlabel">Name</label>
+                  <input style="height:55px;" id="mce-NAME" type="text" name="name"  title="Name"  placeholder="" />
+                  <label class="formlabel">Email</label>
+                  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                  <label class="formlabel">Company</label>
+                  <input style="height:55px;" id="mce-COMPANY" type="text" name="company" placeholder="" />
+                  <label class="formlabel">Telephone</label>
+                  <input style="height:55px;" id="mce-PHONE" type="text" name="phone" placeholder="" />
+                </div>
+                <div class="large-6 medium-6 small-12 column">
+                <label class="formlabel" for="mce-TOPIC">Proposed Topic </label>
+	            <input style="height:55px;" type="text" value="" name="TOPIC" class="" id="mce-TOPIC">
+                
+                  <label class="formlabel"> Your Message &amp; Short Topic Description</label>
+                  <textarea id="mce-MESSAGE" name="description" placeholder="Please Type your message into this field." style="height:260px;"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-12 medium-12 small-12">
+                 <div id="mce-responses" class="clear">
+		<div class="response" id="mce-error-response" style="display:none"></div>
+		<div class="response" id="mce-success-response" style="display:none"></div>
+	</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;"><input type="text" name="b_c03cb8f11b1f34771fdd1747c_3acb436a93" tabindex="-1" value=""></div>
+    
+                
+                
+                  <input class="submitbutton" id="mc-embedded-subscribe" type="submit" name="submit" value="APPLY AS SPEAKER" />
+                </div>
+              </div>
+           
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='NAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='COMPANY';ftypes[2]='text';fnames[4]='PHONE';ftypes[4]='number';fnames[3]='MESSAGE';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+       <a class="close-reveal-modal">&#215;</a>
+      </div>
+
+
+
+
+
+
+
+<!--Foundation Scripts --> 
+<script src="js/vendor/jquery.js"></script> 
+<script src="js/foundation.min.js"></script> 
+<script>
+      $(document).foundation({
+        orbit: {
+          timer_speed: 4000,
+          next_on_click: false
+        }
+        });
+</script> 
+<!--End Foundation Scripts -->
+<script type="text/javascript">
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+
+</script>
+
+
+
+</body>
+</html>
