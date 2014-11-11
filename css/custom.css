@@ -4,13 +4,13 @@
 body {
 	background: #fff;
 	font-family: 'Roboto', sans-serif;
-	font-size:14px;
+	font-size:10px;
 }
 
 
 /*END  General Definitions*/
 
-/* Top Navigation*/
+/* Top Navigation
 .top-bar {
 	height: 125px;
 	background: #fff;
@@ -74,6 +74,21 @@ body {
 }
 /*End Top Navigation*/
 
+/*Scroll to top button */
+.GoTopButton {
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+    text-decoration: none;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    display: none;
+}
+#GoTopImg{
+    width:70px; 
+    height:70px;
+}
+/*Scroll to top button */
 
 /*Header*/
 #header-container {
@@ -84,7 +99,9 @@ body {
 	text-align:center;
 	padding:50px 0;
 }
-
+#header-hrtech-logo {
+	padding:0 15px;
+}
 #header-container h1 {
 	margin-top:50px;
 	color:#fff;
@@ -167,10 +184,16 @@ width:100%;
 	color:#00a8c6;
 	font-family: 'Oswald', sans-serif;
 	}
+#teaser-headline-dash {
+	position: relative;
+	top: -10px;
+}
 #teaser-text{
 	color: #082d3c;
 	margin:60px 0;
 	font-size:27px;
+	font-weight: 300;
+	max-width: 930px !important;
 	}
 #teaser-divider	{
 	background:url(../img/mainstage-divider.png) no-repeat center;
@@ -181,7 +204,8 @@ width:100%;
 	}
 /*End Teaser*/
 /*Main Stage*/
-#mainstage-headline{	margin:60px 0;
+#mainstage-headline{
+	margin:60px 0;
 	text-align:center;
 	font-size:60px;
 	color:#df1e34;
@@ -199,8 +223,9 @@ height:100%;
 min-height:100px;
 background:#e8e4d3;
 text-align:center;
-font-size:1.8em;
-font-weight:lighter;
+font-size:30px;
+color: #082D3C;
+font-weight:300;
 line-height:1.3em;
 padding:20px 20px;	
 	}	
@@ -215,7 +240,7 @@ padding:20px 20px;
 	padding:12px;
 	text-transform:uppercase;
 	text-align:center;
-	font-size:34px;
+	font-size:26px;
 	color:#fff;
 	transition: all 0.3s;
 	background:#df1e34;
@@ -257,6 +282,7 @@ max-width:85%;
 	text-align:center;
 	margin:0 auto;
 	font-weight: 300;
+	color: #082d3c;
 	}		
 .testimonial-logo{
 	margin-top:50px;
@@ -280,6 +306,8 @@ text-align:center;
 .sponsor-logo{
 	display:inline-block;
 	margin:10px;
+	margin-left: 20px;
+	margin-right: 20px;
 	}	
 @media (max-width:677px) {
 	.sponsor-logo {
@@ -298,7 +326,7 @@ text-align:center;
 	}
 #formcontainer{
 	width:100%;
-	min-height:1070px;
+	min-height:970px;
 	background:url(../img/2for1-background-grid.png) center top no-repeat;
 	background-size:cover;
 	padding:50px 20px 50px 20px;
@@ -326,6 +354,7 @@ text-align:center;
 	font-size:24px;
 	list-style-type:none;
 	color:#fff;
+	margin-left: 0;
 	}	
 #formlist li {
 	padding:2px 0;
@@ -334,7 +363,7 @@ text-align:center;
 	position:relative;
 	left:0;
 	text-align:left;
-	font-size:21px;
+	font-size:24px;
 	color:#fff;
 	}
 	
@@ -346,7 +375,7 @@ text-align:center;
 	padding:10px 10px;
 	text-transform:uppercase;
 	text-align:center;
-	font-size:30px;
+	font-size:26px;
 	color:#fff;
 	transition: all 0.3s;
 	background:#df1e34;
@@ -358,9 +387,12 @@ text-align:center;
 		background:#00a8c6;
 		cursor:pointer;
 	}	
-#first_name, #email, #email-modal, #company, #phone, #seats {
+#first_name, #email, #email-modal, #company, #phone, #seats, #mce-EMAIL {
 	height:56px;
 	}
+ .form-textarea {
+	height:380px;
+ }
 /*2for1 Form*/
 /*Newsletter Form*/
 #newsletterform-divider{
@@ -379,15 +411,12 @@ text-align:center;
 	padding:130px 15px 150px 15px;
 	}
 #newsletterform-headline{
-	font-size:32px;
+	font-size:36px;
 	color:#fff;
 	text-transform:uppercase;
 	text-align:right;
 	line-height:34px;
-	font-weight:100;
-	
-
-		
+	font-weight:300;	
 	}
 @media (min-width:1046px){
 #newsletterform-headline{
@@ -395,8 +424,12 @@ text-align:center;
 	top:15px;
 	}	
 }
+#emailaddress {
+	font-size: 24px;
+	font-weight: 300;
+}
 #newsletter-submit, #newsletter-submit-modal{
-	font-size:24px;
+	font-size:26px;
 	font-weight:400;
 	margin:0 auto;
 	border:0;
@@ -523,12 +556,12 @@ text-align:center;
 	width:100%;
 	text-align:center;
 	text-transform:uppercase;
-	font-size:18px;
+	font-size:17px;
 	color:#fff;
 	transition: all 0.3s;
 	background:#df1e34;
 	padding:15px;
-	height:56px;
+	height:50px;
 	margin-top:-5px;
 	}	
 #download-button:hover{
@@ -560,3 +593,103 @@ font-size:14px;
 color:#7f7f7f;	
 	}
 /*End Grey Footer*/
+
+
+/*@MEDIA ELEMENTS FOR TABLET AND MOBILE VIEW*/
+/*TABLET VIEW*/
+@media (min-width:769px) and (max-width:1240px){ /*small desktops, tablets in landscape mode*/
+  #header-container h2 {
+    font-size: 40px;
+  }
+  .speaker-info{
+    font-size: 24px;
+  }
+  #newsletterform-headline{
+    font-size: 24px;
+  }
+  #emailaddress {
+    font-size: 15px;	
+  }
+}
+/*MOBILE VIEW*/
+@media (max-width:768px){ /*mobile phones*/
+  #header-hrtech-logo {
+    padding:0 5px;
+  }  
+  #header-container h1 {
+    font-size: 40px;
+  }  
+  #header-container h2 {
+    font-size: 30px;
+  }
+  #teaser-headline{
+    font-size: 35px;
+    margin-top: 40px;
+  }
+  #teaser-headline-dash{
+    top: -5px;	
+  }  
+  #teaser-text{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #mainstage-wrapper {
+	margin-bottom: 10px;
+  }
+  #mainstage-headline{
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }	
+  .speaker-info{
+    padding-top: 30px;
+    font-size: 16px;
+  }
+  #speaker-button {
+	/*height: 50px;*/
+  }
+  #testimonial-container {
+	padding-top: 30px;
+  }
+  #testimonial-container p{
+    font-size: 20px;
+  }
+  #sponsor-headline{
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  #formheadline	{
+    font-size: 35px;
+    margin-top: 50px;
+  }
+  #formlist, .formlabel {
+	font-size: 18px;
+  }
+  .form-textarea {
+	height: 355px;
+  }
+  .register-button-container {
+	padding-left: 10px; padding-right: 10px;
+  }
+  #register-button {
+	margin-top: 10px;
+  }
+  #newsletterform-divider {
+	
+  }
+  #newsletterform-headline {
+	font-size: 30px;
+	line-height: 36px;
+  }
+  #copyright, #terms {
+	padding-top: 0;
+  }
+}
+@media (max-width:580px){
+    .GoTopButton {
+        bottom: 15px;
+        right: 15px;
+    }	
+}

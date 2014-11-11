@@ -27,6 +27,11 @@
 <!-- TESTIMONIALS FADE-IN FADE-OUT -->
 <script src="js/testimonials-fadein-fadeout.js"></script>
 
+<!-- Scroll to top JS --> 
+<script src="js/gotopscroll.js"></script>
+<!-- Smooth scroll JS -->
+<script src="js/smoothscroll.js"></script>
+
 <style type="text/css"> 
 .testimonial-logo img{
   margin: 0 auto;
@@ -45,7 +50,7 @@
 
 @media (max-width:480px){
   #speaker-button, #myModal-apply-as-speaker .submitbutton {
-    font-size: 16px;
+    font-size: 24px;
   }
 }
 
@@ -194,7 +199,7 @@
     </nav>
     <!--END NAVIGATION MENU --> 
     <!--HEADER-->
-    <div id="header-container"> <img style="padding:0 15px;" src="img/hrtech-logo.png" alt="hrtech logo">
+    <div id="header-container"> <img id="header-hrtech-logo" src="img/hrtech-logo.png" alt="hrtech logo">
       <h1>UNLEASH YOUR PEOPLE!</h1>
       <h2>The World's Fastest Growing HR Event</h2>
       <a href="#" data-reveal-id="myModal" >
@@ -210,7 +215,7 @@
     <!-- TEASER -->
     <div class="row" >
       <div class="large-12 columns">
-        <h1 id="teaser-headline">GAM<span style="letter-spacing: 5px;">E<span style="position: relative; top: -10px;">-</span></span>CHANGING HR</h1>
+        <h1 id="teaser-headline">GAM<span style="letter-spacing: 5px;">E<span id="teaser-headline-dash">-</span></span>CHANGING HR</h1>
         <p class="text-center" id="teaser-text">HR Tech Europe is Europe's most important event on how software, technology systems and collaborative tools are bringing about surmountable change in the way people and organizations work.</p>
       </div>
     </div>
@@ -220,15 +225,11 @@
     <div id="mainstage-wraper">
     <h1 id="mainstage-headline">MAIN STAGE</h1>
     <div class="row" id="mainstage-wrapper">
-      <div  class="large-4 medium-4 columns speaker-wrapper"> <img src="img/speaker-peterh.jpg" alt="Peter Hinsen - Aeross">
-        <div class="speaker-info">Founder and CEO <br>
-at nexxworks </div>
+      <div  class="large-4 medium-4 columns speaker-wrapper"> <img src="img/speaker-peterh.jpg" alt="Peter Hinsen - Founder and CEO at nexxworks">
         <img src="img/nexxworks.png" alt="top50thinkers"> </div>
-      <div class="large-4 medium-4 columns speaker-wrapper"> <img src="img/speaker-rachelb.jpg" alt="Rachel Botsman - Ozolab">
-        <div class="speaker-info">Named as one of the ‘Most Creative People in Business’</div>
+      <div class="large-4 medium-4 columns speaker-wrapper"> <img src="img/speaker-rachelb.jpg" alt="Rachel Botsman - Author &amp; Entrepreneur, Named as one of the Most Creative People in Business">
         <img src="img/fastcompany.png" alt="fastcompany"> </div>
-      <div class="large-4 medium-4 columns speaker-wrapper"> <img src="img/speaker-costasm.jpg" alt="Costas Markides - London Business School">
-        <div class="speaker-info">Ranked Top 50 Most Influential Management Thinkers</div>
+      <div class="large-4 medium-4 columns speaker-wrapper"> <img src="img/speaker-costasm.jpg" alt="Costas Markides - London Business School, Ranked Top 50 Most Influental Management Thinkers">
         <img src="img/thinkers50.png" alt="top50thinkers"> </div>
     </div>
     <a href="#">
@@ -282,7 +283,7 @@ at nexxworks </div>
     <img src="img/conference-images.jpg" alt="HRTech Conference">
     <div id="sponsor-container">
       <h1 id="sponsor-headline">our clients</h1>
-      <div class="row text-center">
+      <div style="margin: 0 auto; text-align: center;">
         <div class="sponsor-logo"><a href="http://www.cornerstoneondemand.com/" target="_blank"><img src="img/cornerstone-logo.png" alt="cornerstone"></a></div>
         <div class="sponsor-logo"><a href="http://www.workday.com/uk/" target="_blank"><img src="img/workday-logo.png" alt="workday"></a></div>
         <div class="sponsor-logo"><a href="http://www.oracle.com/hcm" target="_blank"><img src="img/oracle-logo.png" alt="oracle"></a></div>
@@ -315,7 +316,7 @@ at nexxworks </div>
         <input type="hidden" name="retURL" value="http://london.hrtecheurope.com/thankyou.html" />
        
         <div class="row">
-          <div class="large-6 medium-6 small-12 column">
+          <div class="large-6 medium-6 small-12 column form-left-container">
             <label class="formlabel" >Name</label>
             <input id="first_name" type="text" name="name"  title="Name"  placeholder="" />
             <label class="formlabel" for="email">Email</label>
@@ -326,13 +327,13 @@ at nexxworks </div>
             <input id="phone" type="text" name="phone" placeholder="" />
           </div>
           <div class="large-6 medium-6 small-12 column">
-            <label class="formlabel" >Your Message or Question (optional)</label>
-            <textarea name="description" placeholder="Please Type your message into this field." style="height:370px;"></textarea>
+            <label class="formlabel" >Your Message or Question</label>
+            <textarea name="description" placeholder="Please type your message into this field. (optional)" class="form-textarea"></textarea>
           </div>
         </div>
         <div class="row">
-          <div class="large-12 medium-12 small-12">
-            <input class="submitbutton" type="submit" name="submit" value="REGISTER NOW" />
+          <div class="large-12 medium-12 small-12 register-button-container">
+            <input class="submitbutton" id="register-button" type="submit" name="submit" value="REGISTER NOW" />
           </div>
         </div>
         <div id="newsletterform-divider"></div>
@@ -421,11 +422,12 @@ at nexxworks </div>
         
           
           <h2>Download brochure</h2>
-          <p class="lead">In order to download our brochure please type in your email address into the field below:</p>
+          <p class="lead">In order to download our brochure please type in your email address into the field below. <br>We will send you an email when our brochure will be ready.</p>
           <div id="myModal-container" style="margin: 0 auto; max-width:670px;"> <form id="myForm-modal" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
              <input type="hidden" name="oid" value="00DD0000000nwgk" />
-             <input type="hidden" name="retURL" value="http://london.hrtecheurope.com/PDF/2015_HR_Tech_London_Sponsorship.pdf" />
-            
+             <!--<input type="hidden" name="retURL" value="http://london.hrtecheurope.com/PDF/2015_HR_Tech_London_Sponsorship.pdf" />-->
+             <input type="hidden" name="retURL" value="http://london.hrtecheurope.com/thankyou.html" />
+	     
               <div class="large-9 medium-8 small-12 column" style="padding:0;">
                <input id="email-modal"  type="text" style="border:0;" name="email" placeholder="Enter Your Email Address"/>
                </div>
@@ -472,6 +474,9 @@ at nexxworks </div>
   <!-- close the off-canvas menu --> 
   <a class="exit-off-canvas"></a> </div>
 </div>
+<!-- GO TOP SCROLL -->
+<a href="#" class="GoTopButton smoothScroll"><img id="GoTopImg" src="img/gotop/gotop.png" alt="Go top"></a>
+<!-- END GO TOP SCROLL -->
 
        <div id="myModal-apply-as-speaker" class="reveal-modal" data-reveal>
         <div class="close-reveal-modal" data-dismiss="modal" aria-hidden="true"><img src="img/modal-close.png" alt="modal-close-button"></div>
@@ -515,7 +520,6 @@ at nexxworks </div>
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='NAME';ftypes[1]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[2]='COMPANY';ftypes[2]='text';fnames[4]='PHONE';ftypes[4]='number';fnames[3]='MESSAGE';ftypes[3]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
 <!--End mc_embed_signup-->
-       <a class="close-reveal-modal">&#215;</a>
       </div>
 
 
