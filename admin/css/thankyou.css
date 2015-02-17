@@ -1,0 +1,38 @@
+/*CSS definitions of the THANKYOU section of the page */
+
+.ubuntu-text {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+/*THANK YOU HEADER*/  
+  #thank-you-header {
+    text-align: center;
+    margin: 80px auto;
+  }
+  #thank-you-header h1 {
+    margin-bottom: 20px;
+  }  
+/*END:THANK YOU HEADER*/
+/*CONTACT INFO AND CONTACT MEMBER*/
+  .contact-info-container, .contact-member-container {
+    max-width: 980px;
+  }
+  .contact-member {
+  font-size:16px;
+  width: 170px;
+  margin: 0 auto;
+  text-align: left;
+  font-family: 'Ubuntu', sans-serif;
+  }
+  .contact-pic {
+          height: 170px;
+          width: 170px;
+          margin-top: 10px;
+  }
+  .contact-member-container {
+    margin-bottom: 50px;
+  }
+/*END:CONTACT INFO AND CONTACT MEMBER*/
+.wp30 {
+  height: 30px;
+}

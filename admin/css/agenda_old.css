@@ -1,0 +1,182 @@
+/*CSS definitions of the AGENDA section of the page */
+
+body div {
+  box-sizing: border-box;
+  line-height: normal;
+}
+
+.OswaldText { font-family: 'Oswald', sans-serif; }
+.RobotoText { font-family: 'Roboto', sans-serif; }
+.BlueText   { color: #00a8c6; }
+.RedText    { color: #DF1E34; }
+
+#Agenda {
+  padding:10px;
+}
+
+#AgendaNavigation, #Agenda {
+  max-width: 970px;
+  margin: 0 auto;
+}
+#AgendaNavigation {
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  
+  display: -webkit-flex;
+  -webkit-flex-wrap: no-wrap;
+  -webkit-align-items: flex-end;
+  -webkit-justify-content: space-between;
+  
+  display: -moz-flex;
+  -moz-flex-wrap: no-wrap;
+  -moz-align-items: flex-end;
+  -moz-justify-content: space-between;  
+}
+#AgendaTitle { font-size: 3.6em; }
+#day-selector, #session-selector {
+  border: 1px solid #bbbbbb;
+  font-size: 1.7em;
+  line-height: 2.3em;
+  height: 50px;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-bottom: 13px;
+  margin-left: 20px;
+  width: 220px;
+}
+
+.DayTextContainer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-start;
+  
+  display: -moz-flex;
+  -moz-align-items: center;
+  -moz-justify-content: flex-start;  
+  
+  margin-top: 20px;
+}
+.Day1Border{ border-bottom: 2px solid #00a8c6; }
+.Day2Border{ border-bottom: 2px solid #DF1E34; }
+
+
+.StageName {
+  font-size: 2.8em;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 115px;
+}
+.DayNumberText {
+  font-size: 6em;
+  text-transform: uppercase;
+  padding-right: 5px;
+}
+.DayNameText {
+  font-size: 2.3em;
+  text-transform: uppercase;
+}
+.DayMonthText { color: #3f3f3f; }
+
+.Session > a {
+  display: block;
+  content: " ";
+  margin-top: -130px;
+  height: 130px;
+  visibility: hidden;
+}
+
+.Session {
+  width: 100%;
+  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 25px;
+  font-size: 1.7em;
+  color: #333333;
+  border-bottom: 1px solid #d0d0d0;
+}
+.SessionTime {
+  display: inline-block;
+  padding-left: 10px;
+  width: 100px;
+}
+.LongSessionTime {
+  position: relative;
+  top: -22px;
+}
+.SessionTitle     { display: inline-block; }
+.LongSessionTitle { max-width: 770px; }
+.Session .agenda-icon {
+  float: right;
+  padding-right: 10px;
+  padding-top: 3px;
+}
+.Session .icon-microphone { color: #8b8b8b; }
+.HighlightedSession { background-color: #EEEEEE; }
+
+#Day1MainContainer .Session:hover {
+  transition: all 0.2s;
+  background-color: #00a8c6;
+  color: #fff;
+}
+#Day2MainContainer .Session:hover {
+  transition: all 0.2s;
+  background-color: #DF1E34;
+  color: #fff;
+}
+#Day1MainContainer .Session:hover .agenda-icon{ color: #fff; }
+#Day2MainContainer .Session:hover .agenda-icon{ color: #fff; }
+
+.day1-no-event, .day2-no-event { display: none; }
+
+@media (max-width:990px){
+  #Agenda { padding-top: 120px; }
+  .Session .agenda-icon { display: none; }
+  #AgendaNavigation     { display: block; }
+  #day-selector, #session-selector {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+  .StageName { margin-left: 10px; }
+  .SessionTime, .SessionTitle { display: block; }
+  .SessionTime     { padding-left: 0; }
+  .LongSessionTime { position: static; }
+}
+@media (max-width: 720px){
+  #Agenda {padding-top: 100px;}
+}
+@media (max-width:640px){
+  #Agenda {padding-top: 50px;}
+}
+
+/*STICKY SOCIAL ICON ALIGMENTS*/
+.StickySocialIcon {
+  padding-top: 2px;
+}
+.StickyFlickrIcon img{
+    position: relative;
+    top: -3px;
+}
+.StickySlideshareIcon img{
+    position: relative;
+    top: -3px;
+}
+/*END STICKY SOCIAL ICON ALIGMENTS*/
+/*Mobile menu margin for the content*/
+@media (max-width:640px){
+  
+}
+/*Mobile menu fa-bars button alignment*/
+.fa-bars {
+  position: relative;
+  top: -7px;
+}
+/*end Mobile menu fa-bars button alignment*/

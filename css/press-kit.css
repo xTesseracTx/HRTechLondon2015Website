@@ -1,0 +1,391 @@
+@charset "utf-8";
+/* CSS Document of the Press Kit page */
+
+/* Resettin Foundation */
+.tabs {
+	position: relative;
+	top: 2px;	
+}
+.tabs .tab-title > a {
+	padding: 0px;
+}
+.tab-title {
+	font-size: 17px;
+	color: #323232;	
+	padding: 10px 15px 15px 15px;
+	height: 45px;
+	background-color: #e2e2e2;
+	border-top: 1px solid #c2c2c2;
+	border-left: 1px solid #c2c2c2;
+	border-bottom: 1px solid #c2c2c2;
+}
+.tab-title:hover {
+	background-color: #fff;
+}
+.tabs-content > .content {
+	height: 600px;
+	overflow-y: scroll;
+	overflow-x: hidden;	
+	border: 1px solid #c2c2c2;
+	padding: 50px 15px 0px 35px;
+}
+
+.active {
+	background-color: #fff;	
+	border-bottom: 3px solid #fff;
+	z-index: 10;
+}
+
+/* End Resettin Foundation */
+
+/* Image Header */
+.ImageHeader {
+	width: 100%;
+	background-image: url(../img/press-kit/press-kit-header-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 100px;	
+	padding-top: 100px;
+}
+/* end Image Header */
+
+
+#MainContent * {
+	transition: all 0.3s;	
+}	
+#PressKitContainer {
+	margin-top: 65px;
+}
+#PressKitInnerContainer {
+	width: 1120px;
+	margin: 0 auto;
+}
+#PressKitContent {
+	position: relative;	
+}
+#LastTab {
+	border-right: 1px solid #c2c2c2;	
+}
+.DownloadButton {
+	position: absolute;
+	top: -45px;
+	right: 0;	
+	height: 45px;
+	color: #000;
+	background: #fff;
+	border-top: 1px solid #c2c2c2;
+	border-right: 1px solid #c2c2c2;
+	border-left: 1px solid #c2c2c2;
+	font-size: 17px;
+	text-align: center;
+	padding: 15px;
+}
+.DownloadButton:hover {
+	background: #fff;
+	cursor: default;	
+}
+.DownloadButtonReady { /* The button turns to blue when at least one checkbox is checked */
+	color: #fff;
+	background: #17ace3;	
+}
+.DownloadButtonReady:hover { /* hover effect for the Ready download button */
+	background: #FC354C;	
+	cursor: pointer;
+}
+.ContentHeader, .ContentHeader input {
+	font-size: 17px;
+	color: #323232;
+	position: relative;
+}
+.ContentHeader p {
+	font-size: 12px;
+	margin-bottom: 35px;	
+}
+.ContentHeader p strong {
+	font-size: 17px;	
+}
+.CompletePack {
+	position: absolute;
+	top: -55px;
+	right: 0px;
+	color: #29a0c7;	
+}
+.CompletePack p {
+	font-size: 17px;
+	line-height: 0px;
+	text-align: right;	
+}
+.CompletePack p span {
+	font-size: 12px;
+	padding-right: 17px;
+}
+
+
+
+/* Logo packages */
+#LogoPackages .ContentContainer {
+	position: relative;	
+}
+#LogoPackages .ContentHeaderTitle p {
+	margin-bottom: 10px;	
+}
+.LogoPack {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 40px;	
+}
+.LogoPack p {
+	font-size: 17px;
+	color: 	#29a0c7;
+	padding-top: 10px;
+}
+/* end Logo packages */
+
+/* Fact Sheets */
+#FactSheets .ContentContainer {
+	position: relative;	
+}
+.DocumentRow {
+	padding-bottom: 40px;	
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 40px;
+}
+.Document {
+	display: inline-block;
+	margin-right: 40px;	
+}
+.Document img {
+	margin-bottom: 20px;
+}
+.Document p {
+	color: #29a0c7;	
+	font-size: 17px;
+	margin-bottom: 0;
+	line-height: 0;
+}
+.Document p span {
+	font-size: 12px;
+	padding-left: 20px;
+}
+/* end Fact Sheets */
+
+/* Photos */
+#Photos .ContentContainer {
+	position: relative;	
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 35px;
+}
+.EventPhotoRow {
+	padding-bottom: 30px;
+}
+.EventPhoto {
+	display: inline-block;
+	margin-right: 14px;	
+	width: 250px;
+}
+.BrightnessFilter {
+	filter: brightness(0.8);
+	-webkit-filter: brightness(0.8);
+}
+.BrightnessFilter:hover {
+	filter: brightness(1);
+	-webkit-filter: brightness(1);
+}
+.LastPhoto {
+	margin-right: 0px;	
+}
+.EventPhoto h6 {
+	color: #323232;
+	font-size: 12px;
+	padding-top: 10px;	
+}
+.EventPhoto p {
+	color: #29a0c7;	
+	font-size: 17px;
+	margin-bottom: 0;
+}
+#Photos #SpeakerPhotoContainer {
+	border-bottom: 0;	
+}
+#SpeakerPhotoList{
+	column-count: 4;
+	-moz-column-count: 4;
+	-webkit-column-count: 4;
+}
+#SpeakerPhotoList ul {
+	list-style-type: none;
+	line-height: 10px;
+	margin-left: 0;
+}
+#SpeakerPhotoList ul a {
+	font-size: 17px;
+	color: #29a0c7;
+}
+/* end Photos */
+
+/* Videos */
+.VideoRow {
+	padding-bottom: 35px;
+	border-bottom: 1px solid #cccccc;
+	margin-bottom: 35px;
+}
+.VideoImage, .VideoLinks {
+	display: inline-block;	
+	vertical-align: top;
+}
+.VideoImage {
+	width: 100%;
+	max-width: 	360px;
+	margin-right: 20px;
+}
+.VideoImage  img {
+	margin-bottom: 13px;	
+}
+.VideoImage h6 {
+	font-size: 17px;	
+}
+.VideoLinks {
+	width: 100%;
+	max-width: 660px;
+}
+.VideoLinks strong {
+	font-size: 12px;
+	padding-bottom: 5px;	
+}
+.VideoLinks input[type="text"][readonly], .VideoLinks textarea {
+	margin-top: 8px;
+	background-color: #fff;
+	border: 1px solid #cccccc;
+	font-size: 12px;
+}
+/* end Videos */
+
+/* Mobile app */
+#MobileApp {
+	background-image: url(../img/press-kit/mobile-app/mobile-app-bg.jpg);
+	background-position: left bottom;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 620px;
+}
+#MobileApp .ContentContainer {
+	position: relative;
+}	
+#MobileApp .ContentContainer p, #MobileApp .ContentContainer div {
+	width: 100%;
+	max-width: 620px;
+	line-height: 20px;
+}
+#QRCode {
+	position: absolute;
+	top: -90px; 
+	right: 70px;	
+}
+/* end Mobile app*/
+
+/* Slides */
+#Filter {
+	position: absolute;
+	top: 20px;
+	right: 0;	
+	font-family: 'Roboto', sans-serif;	
+	font-size: 17px;
+}
+#FilterButton {
+	cursor: pointer;	
+}
+#Filter .fa {
+	padding-left: 5px;	
+}
+#Filter .fa-caret-up {
+	display: none;	
+}
+#Filter input {
+	width: 170px;
+	height: 30px;
+	border: 1px solid #c2c2c2;	
+	padding-left: 10px;
+	margin-left: 20px;
+}
+#TagsContainer {
+	width: 100%;
+	border: 1px solid #acacac;
+	padding: 15px;
+	margin-bottom: 40px;
+	display: none;
+}
+#TagsContainer * {
+	font-size: 12px;	
+}
+#TagsContainer ul {
+	margin: 0;	
+}
+#AppliedTags {
+	padding-top: 15px;
+	display: none;
+}
+#AppliedTagsList:empty #AppliedTags{
+	display: none;
+}
+#AppliedTags p {
+	margin-bottom: 20px;
+}
+/* Note:
+Tag = element of the available tags inline list (#AvailableTags)
+SelectedTag = a Tag in the available tags inline list which is selected
+Applied Tag = element of the applied filters inline list (#AppliedTags)
+*/
+.Tag, .AppliedTag, .SelectedTag {
+	padding: 5px 10px;
+	background-color: #383838;
+	color: #fff;
+	text-align: center;
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.AppliedTag {
+	display: none;	
+}
+.AppliedTag .fa {
+	padding-left: 3px;	
+}
+.Tag:hover, .AppliedTag:hover {
+	background: #17ace3;
+	cursor: pointer;
+}
+.SelectedTag, .SelectedTag:hover {
+	background: #c3c3c3;
+	cursor: default;
+}
+.Slide {
+	display: inline-block;
+	margin-right: 18px;	
+	margin-bottom: 40px;
+	width: 245px;
+	vertical-align: bottom;
+}
+.LastSlide {
+	margin-right: 0;	
+}
+.Slide * {
+	font-size: 12px;	
+}
+.Slide p {
+	color: #323232;
+	margin: 5px 0;
+}
+.SlideButton {
+	color: #3c9cd7;
+	border: 1px solid #3c9cd7;
+	display: inline-block;
+	padding: 3px 10px;
+	margin-right: 5px;
+}
+.SlideButton:hover {
+	background: #3c9cd7;
+	color: #fff;
+}
+/* End Slides */
+

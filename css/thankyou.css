@@ -1,0 +1,159 @@
+/* CSS definitions of the THANKYOU page */
+
+#ThankYouHeaderContainer {
+padding-top:70px;	
+	}
+/* Thank You Header */
+#ThankYouHeaderContainer {
+	margin-top: 50px;
+	width: 100%;
+}
+#ThankYouHeaderInnerContainer {
+	width: 100%;
+	padding: 25px;
+	text-align: center;
+}
+#ThankYouHeaderInnerContainer img {
+	margin-bottom: 50px;
+}
+#ThankYouHeaderInnerContainer h1, #ThankYouHeaderInnerContainer h2 {
+	font-size: 30px;
+}
+#ThankYouHeaderInnerContainer h1 {
+	font-weight: 500;
+	margin-bottom: 100px;
+}
+#ThankYouHeaderInnerContainer h1 span {
+  font-size: 12px;
+  font-weight: 300;
+}
+#ThankYouHeaderInnerContainer h2 {
+	font-weight: 300;
+}
+@media (max-width: 768px){
+	#ThankYouHeaderContainer {
+		margin-top: 10px;
+	}
+	#ThankYouHeaderInnerContainer img {
+		margin-bottom: 10px;
+	}	
+	#ThankYouHeaderInnerContainer h1, #ThankYouHeaderInnerContainer h2 {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+}
+/* END Thank You Header */
+
+
+/*Members*/
+#PeterFile, #SteveMic, #ViktoriaCog, #MarcPeople, #ClaireBadge {
+	padding: 40px 50px 10px 50px;
+	background-repeat:no-repeat;
+}
+
+ 
+#PeterFile {
+	background-image:url(../img/contact/file.png);
+}
+
+#SteveMic {
+	background-image:url(../img/contact/microphone.png);
+}
+
+#ViktoriaCog {
+	background-image:url(../img/contact/cog.png);
+}
+
+#MarcPeople {
+	background-image:url(../img/contact/humans.png);
+}
+
+#ClaireBadge {
+	background-image:url(../img/contact/badge.png);
+}
+
+#SteveTitle {
+	color:#fc354c;
+}
+
+#PeterTitle {
+	color:#ff8e2d;
+}
+
+#ViktoriaTitle {
+	color:#8fbe00;
+}
+
+#MarcTitle {
+	color:#56aecf;
+}
+
+#ClaireTitle {
+	color:#fc354c;
+}
+
+
+
+
+/*Members*/
+#ContactMembersContainer {
+    text-align: center;
+	margin: 20px 0 75px 0;
+}
+.ContactMember {
+    margin-bottom: 20px;
+	display:inline-block;
+	margin:10px;
+}
+.ContactMember p{
+    max-width: 205px;
+    margin: 0 auto;
+    text-align: left;
+	font-size: 1.3rem;
+}
+
+.ContactEmail {
+    font-size: 1.5em;
+}
+
+
+@media(max-width:1400px){
+.ContactMember p{
+    max-width: 200px;
+}
+}
+
+@media (max-width: 768px){
+	#ContactMembersContainer {
+		margin: 0px 0 20px 0;
+	}	
+}
+
+
+/*@medias for some mobile view resizing*/
+@media (max-width:1024px){
+    .ContactMember p{
+        padding-left: 0px;
+    }
+}
+@media (max-width:640px){
+    #Contact {
+        margin-top: 50px;    
+    }
+}
+@media (max-width:480px) {
+    #ContactFormContainer {
+       /* padding-left: 10px;
+        padding-right: 10px;*/
+    }
+    #ContactFormHeader {
+        font-size: 1.8em;
+    }
+    .ContactFormSubscribeButton {
+        float: none;
+        width: 100% !important;
+    }
+    .ContactEmail {
+        font-size: 1.4em;
+    }
+}

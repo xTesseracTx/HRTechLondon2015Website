@@ -1,0 +1,153 @@
+#MainNavigationMenu {
+max-height:100px;
+width:100%;
+text-align:center;
+font-weight: 300;
+text-transform: uppercase;
+background:#fff;
+position:fixed;
+z-index:1000;
+-webkit-box-shadow: 0px 1px 3px 3px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 1px 3px 3px rgba(0,0,0,0.4);
+box-shadow: 0px 1px 3px 3px rgba(0,0,0,0.4);
+}
+
+#DesktopMenuContainer {
+	float:left;
+	margin-left:35px;
+	padding-top:15px;
+	height:100px;
+	}
+	
+#DesktopSocialHeader {
+    float:right;
+	margin-right:35px;
+	padding-top:20px;
+	height:100px;	
+}
+
+
+	
+#HeaderGetTicketsButton {
+	display: inline-block;
+	padding-top:14px;
+	font-size:16px;
+	width:210px;
+	color:white;
+	background:#2DAAE1;
+	height:42px;
+	font-weight:400;
+	transition:all 0.3s;
+	position:relative;
+	top:4px;
+	
+	}
+	
+#HeaderGetTicketsButton:hover {
+	background:#FB354C;
+	
+	}			
+	
+#DesktopSocialHeader a{
+	margin-right:2px;
+	}	
+			
+.right-off-canvas-menu {
+	transform: translate3d(100%, 0px, 0px) !important;
+}
+.move-left .exit-off-canvas {
+	box-shadow: -4px 0 4px rgba(0, 0, 0, 0.4), 4px 0 4px rgba(0, 0, 0, 0.4);
+}
+	
+#DesktopMenuContainer a{
+	font-size:17px;
+	color:#333333;
+	padding:0.3em 0;
+	height:3em;
+	boder-bottom:0; 
+	transition:all 0.25s;
+} 
+		
+#MainNavigationMenu a:hover, a.ActiveNavmenuItem{
+	border-bottom:2px solid #00A8C6;
+	color:#16AAE1!important;
+	}	
+	
+a#HeaderLogoLink:hover {
+	border-bottom:0;
+	}	
+.NavmenuDivider{
+	
+	width:10px;
+	display:inline-block;
+	margin-right:3px;
+	height:1em;
+	margin-bottom:-3px;
+	}	
+	
+#HRTechSmallLogo{
+	display:inline-block;
+	margin-right:25px;
+	}	
+	
+#MobileNavigation{
+height:65px;
+padding:12px;
+width:100%;
+text-align:center;
+font-size:4.5em;
+background:#fff;
+position:fixed;
+z-index:1000;
+display:none;
+-webkit-box-shadow: 0px 1px 3px 3px rgba(0,0,0,0.4);
+-moz-box-shadow: 0px 1px 3px 3px rgba(0,0,0,0.4);
+box-shadow: 0px 1px 3px 3px rgba(0,0,0,0.4);
+	}	
+	
+#MobileNavigation a{
+	float:right;
+	margin-right:10px;
+	color:#333333;
+	font-size:31px;
+	margin-top:5px;
+	}	
+	
+#MobileNavigation img{
+	float:left;
+	margin-left:10px;
+	
+	}	
+#RightsideMobileNavigation ul{
+	list-style-type:none;
+	text-transform: uppercase;
+	font-weight: 300;
+	margin-top: 15px;
+	margin-left: 20px;
+	}	
+#RightsideMobileNavigation ul li{
+	height: 2em;
+	font-size:20px;
+	}	
+#RightsideMobileNavigation ul li a{
+color:#333333;
+	}	
+	
+@media (max-width:1119px){
+	#DesktopSocialHeader {
+		display:none;
+		}
+	}				
+@media(max-width:843px)
+{
+#HRTechSmallLogo{
+	margin-right:0.5em;
+	}		
+	}
+@media(max-width:718px){
+	#MainNavigationMenu {
+		display:none;
+	}	
+#MobileNavigation{
+	display:block;
+	}		

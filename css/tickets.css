@@ -1,0 +1,496 @@
+@charset "utf-8";
+/* General Definitions */
+
+* {
+	transition: all 0.3s;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Oswald', sans-serif;
+}
+/* END General Definitions */
+
+/* Registration Section */
+#Registration {
+	background: url(../img/tickets/paralax_background_tickets.jpg) fixed center top no-repeat;
+	background-size:cover;
+	width: 100%;
+	padding: 172px 0 50px 0;
+}
+@media (max-width:660px) {
+	#Registration {
+		background:#175976;
+		padding:122px 8px 60px 8px;
+	}
+}
+#Registration * {
+	text-align: center;	
+}
+#RegistrationMainWrapper {
+	width: 100%;
+	max-width: 1000px;
+	min-height: 1035px;
+	margin: 0 auto;
+}
+#RegistrationMainWrapper h1 {
+	color: #fff;
+	font-size: 60px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #fff;
+	max-width: 956px;
+	padding-bottom: 32px;
+	margin: 0 auto;
+}
+@media (max-width:660px) {
+	#RegistrationMainWrapper h1 {
+		font-size: 48px;
+	}
+}
+#RegistrationEventInfoWrapper {
+	max-width: 650px;
+	margin: 0 auto;
+	margin-top: 32px;
+	margin-bottom: 72px;
+	letter-spacing: 2px;
+}
+@media (max-width:660px) {
+	#RegistrationEventInfoWrapper {
+		margin-bottom: 52px;
+	}	
+}
+#RegistrationEventInfoWrapper h4 {
+	color: #fff;
+	font-size: 24px;
+	display: inline-block;
+	padding: 0 20px;
+	max-width:245px;
+	margin:0 auto;
+}
+@media (max-width:660px) {
+	#RegistrationEventInfoWrapper h4 {
+		display:block;
+	}
+}
+#RegistrationEventInfoMiddleHeadline {
+	border-left: 3px solid #2da9e0;
+	border-right: 3px solid #2da9e0;
+}
+.RegistrationCategoryHeadline {
+	width: 100%;
+	border-bottom: 1px solid #2da9e0;
+	padding-top:20px;
+	padding-bottom: 30px;
+	font-size: 40px;
+}
+.RegistrationColumn {
+	border-bottom: 2px solid #2da9e0;
+	width: 100%;
+	max-width: 660px;
+}
+#TicketsWrapper {
+	float: left;
+	margin-right: 20px;
+	background: rgba(24,62,77,0.6);
+	
+}
+@media (max-width:1000px) {	
+	#TicketsWrapper {
+		float:none;
+		margin-right:0px;
+		margin:0 auto;
+	}	
+}
+@media (max-width:660px) {
+	#TicketsWrapper {
+		max-width:300px;
+	}
+}
+.Delegates {
+	max-width: 220px;
+	width: 100%;
+	padding:0 !important;
+	padding-top: 30px;
+	margin:0 !important;
+}
+@media (max-width:660px) {
+	.Delegates {
+		max-width:inherit;
+		border-top: 2px solid #2da9e0;	
+	}
+}
+#OneDelegate {
+	float:left;
+	border-right: 1px solid #2da9e0;
+}
+@media (max-width:660px) {
+	#OneDelegate {
+		
+		border-right: 0px;
+	}
+}
+#ThreeDelegates {
+	float:left;
+	border-right: 1px solid #2da9e0;
+	border-left: 1px solid #2da9e0;
+
+}
+@media (max-width:660px) {
+	#ThreeDelegates {
+		border-top: 1px solid #2da9e0;
+		border: 1px solid #2da9e0;
+		border-right: 0;
+	border-left: 0;
+
+	}	
+}
+
+#VIPTickets {
+	display:inline-block;
+	margin:0 auto;
+	border-left: 1px solid #2da9e0;
+	top:-30px;
+	}
+@media (max-width:660px) {
+#VIPTickets {
+	border-left: 0;
+}	
+}
+.Delegates .RegistrationCategoryHeadline {
+	text-transform: uppercase;
+	color: #fff;
+}
+.DelegatePrice {
+	padding: 30px 0;
+	background: rgba(0,0,0,0.30);
+	border-top: 1px solid #2da9e0;
+	border-bottom: 1px solid #2da9e0;
+}
+.DelegatePrice h3 {
+	font-size: 36px;
+	color: #fff;
+	padding-bottom: 35px;
+}
+.RegistrationButton {
+	width: 182px;
+	height: 45px;
+	background: #2daae1;
+	color: #fff;
+	margin: 0 auto;
+	
+	font-size: 22px;
+	padding: 13px 0;
+}
+.RegistrationButton:hover {
+	background: #fc354c;
+}
+#ListOfServices {
+	display: inline-block;
+	border-top: 1px solid #2da9e0;
+	width: 100%;
+	color: #fff;
+	padding: 30px 0;
+}
+@media (max-width:660px) {
+	#ListOfServices {
+		display:block;
+		max-width:300px;
+		margin:0 auto;
+		padding:40px 10px;
+	}
+}
+#ListOfServices ul {
+	list-style-type: none;
+	font-size: 18px;
+	font-weight:300;
+	margin-left:0 !important; /*Override Foundation */
+}
+@media (max-width:660px) {
+	#ListOfServices ul {
+		position:relative;   /*Check what causes margin/padding not to work */
+		top:30px;
+		}		
+}
+#ListOfServices ul li {
+	margin-bottom: 18px;
+}
+#LoyaltyWrapper {
+	float: right;
+	width: 100%;
+	max-width: 320px;
+}
+@media (max-width:1000px) {	
+	#LoyaltyWrapper {
+		float: none;
+		max-width: 660px;
+		margin:0 auto;
+		margin-top: 30px;
+		margin-bottom: 50px;
+	}		
+}
+@media (max-width:660px) {
+	#LoyaltyWrapper {
+		max-width:300px;
+		margin-top:20px;
+		margin-bottom: 70px;
+		border-bottom: 2px solid #2da9e0;
+	}
+}
+#LoyaltyWrapper .RegistrationCategoryHeadline {
+	background:#3388b0;
+	padding-top: 20px;
+}
+#LoyaltyWrapper .RegistrationCategoryHeadline, #LoyaltyWrapper h4, #LoyaltyWrapper h6 {
+	color: #fff;	
+}
+
+#LoyaltyInfo{
+	border-top:1px solid #2da9e0;
+	border-bottom:1px solid #2da9e0;
+	background:#333738;
+	padding:24px;
+}
+#LoyaltyInfo h6{
+	font-size:24px;
+}
+#LoyaltyInfo h4{
+	font-size:30px;
+	margin-bottom:21px;
+}
+
+#ListOfLoyaltyProgram {
+	background:rgba(238,237,236,0.70);
+	display: inline-block;
+	border-top: 1px solid #2da9e0;
+	width: 100%;
+	color: #353535;
+	padding: 30px 0;
+}
+#ListOfLoyaltyProgram ul {
+	list-style-type: none;
+	font-size: 18px;
+	font-weight:300;
+	margin-left:0 !important; /*Override Foundation */
+}
+#ListOfLoyaltyProgram ul li {
+	margin-bottom: 18px;
+}
+/* END Registration Section */
+
+/* Registration Policies Section */
+#RegistrationPoliciesContainer {
+	width: 100%;
+	background: url(../img/tickets/registration-policies-bg.png);
+	background-repeat:repeat;
+	margin-top:-70px;	
+	padding-bottom: 50px;
+}
+#RegistrationPoliciesInnerContainer {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+#RegistrationPoliciesInnerContainer * {
+	color: #353535;
+}
+#RegistrationPoliciesInnerContainer > h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 36px;
+	color: #353535;
+	text-align: center;
+	padding: 50px 0 70px 0;
+}
+@media (max-width: 720px) {
+	#RegistrationPoliciesInnerContainer > h1 {
+		font-size: 
+		padding: 35px 0 40px 0;
+	}	
+}
+
+#RegistrationPolicies {
+	padding-left: 10px;
+	padding-right: 10px;	
+}
+#RegistrationPolicies p {
+	font-size: 20px;
+	line-height: 25px;
+	font-weight: 300;
+}
+#RegistrationPolicies p strong, #RegistrationPolicies h6 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+#Description {
+	padding-right: 55px;
+}
+@media (max-width: 720px){
+	#Description {
+		padding-left: 0px;
+		padding-right: 10px;
+	}
+	#Description p {
+		font-size: 18px;
+	}
+	#Description p strong, #Description h6 {
+		font-size: 20px;
+	}		
+}
+#Description h6 {
+	padding-bottom: 25px;	
+	font-family: 'Roboto', sans-serif;
+}
+#Contact {
+	 border-left: 7px solid rgba(45, 170, 225, 0.2);
+	 padding: 20px 0px 5px 20px;
+}
+#Contact h5 {
+	font-size: 24px;	
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+}
+#Contact p {
+	line-height: 30px;
+}
+#ContactUs {
+	padding-bottom: 20px;	
+}
+#ContactUs h6 {
+	margin-bottom: 50px;
+	font-family: 'Roboto', sans-serif;	
+}
+#ContactUs p .fa {
+	font-size: 24px;
+	padding-right: 5px;
+}
+#SecureYourRoom {
+	padding-bottom: 20px;	
+}
+#SecureYourRoom h6 {
+	padding-bottom: 20px;	
+	font-family: 'Roboto', sans-serif;
+}
+#SecureYourRoom a, #SecureYourRoom a .fa {
+	font-weight: 500;
+	color: #2ea9de;	
+}
+#SecureYourRoom a {
+	font-size: 24px;
+}
+#SecureYourRoom a .fa {
+	font-size: 20px;	
+}
+/* END Registration Polcies Section */
+
+/* Downloads Section */
+#DownloadsContainer {
+	width: 100%;
+	background: #06212b;	
+	padding: 50px 8px;
+}
+#DownloadsInnerContainer {
+	width: 100%;
+	max-width: 840px;
+	margin: 0 auto;
+}
+#DownloadsInnerContainer * {
+	color: #fff;
+}
+#DownloadsInnerContainer h1 {
+	text-align: center;
+	font-family: 'Oswald', sans-serif;
+	font-size: 36px;
+	padding-bottom: 50px;
+}
+#DownloadsInnerContainer h1 span {
+	color: #2ea9de;
+}
+#DownloadBrochureContainer{
+	max-width:360px; 
+	margin:0 auto;
+}
+@media (max-width:370px) {
+	#DownloadBrochureContainer{
+		max-width:320px; 
+	}	
+}	
+#DownloadBrochureContainer img {
+	float:left; 
+	margin-right:20px; 
+	max-width:65px;
+}
+@media (max-width:370px) {
+	#DownloadBrochureContainer img {
+		margin-right:10px; 
+		max-width:45px;
+	}
+}	
+#DownloadBrochureTextContainer {
+	display:inline-block; 
+	max-width:260px;
+	font-size:20px;
+	line-height:22px;
+	font-family: 'Roboto', sans-serif;
+	font-weight:300;
+}	
+@media (max-width:370px) {
+	#DownloadBrochureTextContainer {
+		max-width:200px;
+		font-size:16px;
+		line-height:18px;
+	}
+}	
+.DownloadButton {
+	width: 220px;
+	text-transform: uppercase;
+	color: #fff;
+	border: 2px solid #fff;
+	font-size: 17px;
+	padding: 10px;
+	text-align: center;
+	font-weight: 400;
+}
+#DownloadBrochure:hover {
+	color:#06212B;
+	background:#fff;
+}
+#DownloadLetter {
+	color: #2ea9de;
+	border-color: #2ea9de;
+}
+#DownloadLetter:hover {
+	color: #fff;
+	background: #2ea9de;
+	border-color: #2ea9de;	
+}
+
+#LoyaltyProgramModal input {
+height:56px;
+font-size:20px;	
+	}	
+	
+#LoyaltyProgramModal h2, #LoyaltyProgramModal p {
+	text-align:center;
+	}	
+	
+#LoyaltyProgramModal h2 {
+	font-family: 'Oswald', sans-serif;
+	margin-bottom:20px;
+	}	
+	
+#LoyaltyProgramModal p	{
+	font-size:20px;
+	margin-bottom:10px;
+	}
+.submitbutton {
+	margin-bottom: 0;	
+}
+.submitbutton:hover{
+		transition: all 0.3s;
+		background:#00a8c6;
+		cursor:pointer;
+	}	
+
+ .form-textarea {
+	height:380px;
+ }
+
+/* END Downloads Section */

@@ -1,0 +1,502 @@
+/* CSS definitions of the Loyalty Program page */
+
+/* general definitions */
+h1, h4, h5 {
+	font-family: 'Oswald', sans-serif;	
+}
+h1 {
+	font-size: 60px;
+	text-transform: uppercase;	
+}
+h2, h6 {
+	font-family: 'Roboto', sans-serif;	
+}
+h5 {
+	font-size: 40px;	
+}
+
+/* Main Content */
+#MainContent {
+	margin-top: 100px;	
+}
+@media (max-width: 718px) {
+	#MainContent {
+		margin-top: 65px;	
+	}	
+}
+#MainContent ul {
+	list-style-type: none;	
+	margin: 0;
+}
+#MainContent ul a {
+	color: #353535;
+}
+
+/* Intro */
+#IntroContainer {
+	width: 100%;
+	background-image: url(../img/loyaltyprogram/intro-bg.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;	
+}
+@media (max-width: 1360px) {
+	#IntroContainer {
+		background-image: url(../img/loyaltyprogram/intro-tablet-bg.jpg);
+	}
+}
+@media (max-width: 420px) {
+	#IntroContainer {
+		background-image: url(../img/loyaltyprogram/intro-mobile-bg.jpg);
+	}
+}
+#IntroInnerContainer {
+	width: 100%;
+	max-width: 956px;
+	margin: 0 auto;	
+	padding-top: 65px;
+	padding-bottom: 50px;
+}
+@media (max-width: 970px) {
+	#IntroInnerContainer {	
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+@media (max-width: 420px) {
+	#IntroInnerContainer {	
+		padding-top: 30px;
+		padding-bottom: 35px;
+	}
+}
+#IntroInnerContainer * {
+	color: #fff;
+	font-weight: 300;
+}
+#IntroHeadline {
+	text-align: center;	
+	font-weight: 400;
+}
+@media (max-width: 970px){
+	#IntroHeadline {
+		font-size: 48px;	
+	}
+}
+@media (max-width: 420px) {
+	#IntroHeadline {
+		font-size: 34px;	
+	}		
+}
+#IntroSubHeadline {
+	width: 100%;
+	max-width: 760px;
+	margin: 0 auto;
+	font-weight: 300;
+	line-height: 50px;
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+@media (max-width: 970px){
+	#IntroSubHeadline {
+		font-size: 30px;
+		margin-top: 20px;	
+		line-height: 36px;
+	}
+}
+@media (max-width: 420px){
+	#IntroSubHeadline {
+		font-size: 20px;	
+		line-height: 24px;
+		margin-bottom: 35px;
+	}
+}
+#IntroInnerContainer p {
+	font-size: 18px;
+	line-height: 24px;	
+}
+#BenefitsContainer {
+	width: 100%;
+	max-width: 730px;
+	margin: 0 auto;	
+	padding-top:15px;
+}
+
+#Benefits{
+	list-style-position: inside;
+    text-indent: -50px;
+	padding-left: 50px;
+}
+#Benefits li {
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom:15px;	
+}
+#Benefits li:before {    
+	font-family: 'FontAwesome';
+	content: '\f00c'; /* check-mark symbol */
+	padding-right: 30px;
+	clear:both;
+}
+@media (max-width: 420px){
+	/* The BENEFITS LIST definitions for mobile */
+	#IntroInnerContainer p {
+		font-size: 16px;
+		line-height: 20px;	
+	}	
+	#Benefits{
+		text-indent: -30px;
+		padding-left: 30px;
+	}
+	#Benefits li {
+		font-size: 16px;
+		line-height: 20px;	
+	}
+	#Benefits li:before {    
+		padding-right: 15px;
+	}	
+}
+
+/* Prices */
+.Prices {
+	width: 100%;
+	margin: 0 auto;
+	color: #353535;
+	margin-top: 50px;
+	margin-bottom: 65px;
+}
+#MobilePrices .PriceColumn { /* A small whitespace between two (un)collapsed pricing table on mobile */
+	margin-bottom: 8px;	
+}
+@media (max-width: 759px) { /* hide the 3-columns pricing tables and show the mobile view */
+	#DesktopPrices {
+		display: none;	
+	}
+	#MobilePrices {
+		display: block;	
+	}
+	.Prices {
+		max-width: 300px;  /* set the width of the pricing table wrapper to 300px */
+	}
+}
+@media (min-width:760px) { /* hide the mobile view and show the 3-columns pricing tables */
+	#DesktopPrices {
+		display: block;	
+	}
+	#MobilePrices {
+		display: none;	
+	}
+	.Prices {
+		max-width: 768px; /* set the width of the pricing table wrapper to 768px */
+	}
+}
+@media (min-width:1360px) { 
+	.Prices {
+		max-width: 1330px;  /* set the width of the pricing table wrapper to 1330px */
+	}
+}
+#DescriptionColumn, .PriceColumn {
+	display: inline-block;	
+	width: 100%;
+	max-width: 330px;
+	vertical-align: top;
+}
+#DescriptionColumn {
+	padding-right: 30px;	
+}
+@media (max-width: 759px) {
+	#DescriptionColumn {
+		display: none;	
+	}	
+}
+@media (min-width:760px) and (max-width: 1360px) {
+	#DescriptionColumn {
+		max-width: 265px;	
+		padding-right: 0px;
+		margin-right: 10px;
+	}		
+}
+#DescriptionColumn h3{
+	font-family: 'Roboto', sans-serif;
+	font-size: 36px;
+	font-weight: 600;
+	line-height: 45px;
+	padding-bottom: 45px;
+	padding-left: 25px;
+	padding-top: 20px;
+}
+@media (min-width:760px) and (max-width: 1360px) {
+	#DescriptionColumn h3{
+		padding-bottom: 25px;
+	}		
+}
+#DescriptionColumn p {
+	font-size: 20px;
+	font-weight: 600;	
+	padding-left: 25px;
+}
+#DescriptionColumn p span {
+	font-size: 30px;
+}
+#DescEmail {
+	padding-bottom: 0px;	
+}
+#DescriptionList {
+	border-top: 7px solid #d3edf8;
+	padding-top: 100px;
+	font-size: 20px;
+	font-weight: 300;
+}
+#DescriptionList a:hover {
+	color:#2DAAE1;
+	}
+#DescriptionList li{
+	padding-top: 32px;
+	padding-bottom:10px;
+	line-height: 24px;
+}
+
+.DoubleLine {
+	padding-top: 20px !important;
+	padding-bottom: 15px !important;
+}
+@media (min-width:760px) and (max-width: 1360px) {
+	 /* The description list alignment definitons for tablet*/
+	#DescriptionList {
+		font-size: 18px;
+		padding-top: 90px;
+		padding-left: 5px;
+	}
+	#DescriptionList li{
+		padding-top: 32px;
+		padding-bottom: 15px;	
+	}
+	.DoubleLine {
+		padding-top: 15px !important;
+		padding-bottom: 15px !important;
+	}				
+}
+
+
+/* Pricing tables (Diamond, Platinum, Gold columns) */
+.PriceColumn {
+	text-align: center;
+	background-color: #eeedec;
+	border-bottom: 1px solid #2ea9de;
+}
+@media (min-width:760px) and (max-width: 1360px) {
+	.PriceColumn {
+		max-width: 160px;
+	}
+}
+#MobilePrices .PriceColumn { /* don't show the border-bottom on mobile! */
+	border-bottom: none;	
+}
+.PriceColumn > h4 {
+	color: #fff;
+	font-size: 45px;
+	text-transform: uppercase;
+	padding: 15px;
+	position: relative;
+}
+@media (min-width:760px) and (max-width: 1360px) {
+	.PriceColumn > h4 {
+		font-size: 32px;
+	}
+}
+.PriceColumn > h4 > .fa {
+	font-size: 36px;
+	position: absolute;
+	top: 30px;
+	right: 20px;
+}
+.PriceColumn > h4 > .fa-angle-up {
+	display: none;	
+}
+.DiamondHeader { background: linear-gradient(to right, #b0e4ff, #5ec8ff); }
+.PlatinumHeader { background: linear-gradient(to right, #d4d4d4, #a8a8a8); }
+.GoldHeader { background: linear-gradient(to right, #ffe78e, #ffcd46); }
+#PlatinumMobileContent, #GoldMobileContent { display: none; } /* Mobile ONLY: the content of a pricing table is collapsed by default */
+#DiamondMobileContent, #DiamondUp { /* Mobile ONLY: The Diamond pricing table is open when the page is loaded */
+	display: block;	
+}
+#DiamondDown {
+	display: none;	
+}
+
+.Ticket {
+	font-size: 24px;
+	padding: 18px;
+	font-weight: 600;
+}
+.fa-ticket {
+	font-size: 36px;
+	margin-bottom: 20px;	
+}
+.PriceOff {
+	background-color: #353535; 
+	padding: 10px 0px 20px 0px;
+	font-family: 'Oswald', sans-serif;
+}
+.PriceOff h5 {
+	color: #fff;
+	margin-bottom: 10px;
+}
+.PriceOff span {
+	color: #2daae1;
+	font-size: 20px;
+	letter-spacing: 2px;	
+}
+@media (min-width:760px) and (max-width: 1360px) {
+	.PriceOff span {
+		font-size: 14px;
+		letter-spacing: 1px;	
+	}
+}
+.Save {
+	padding-top: 35px;	
+}
+.Save span { /* saved % with RED background */
+	font-size: 36px;
+	font-weight: 600;
+	color: #fff;
+	background-color: #f64a51;	
+	height: 20px;
+	padding: 0px 5px;
+}
+@media (min-width:760px) and (max-width: 1360px) {
+	.Save span {
+		font-size: 30px;
+	}	
+}
+.Save h5 {
+	padding:10px;
+	color: #2daae1;
+}
+.CheckList {
+	padding:13px 13px 0px 13px;
+}
+.CheckList ul li {
+	border-top: 1px solid #353535;	
+	font-size: 36px;
+	font-weight: 500;
+	line-height: 70px;
+}
+.fa-check-circle, .fa-times-circle {
+	font-size: 40px;
+}
+.fa-check-circle {
+	color: #2daae1;	
+}
+@media (max-width: 759px) { /* Mobile definitions for the Pricing table CHECKLISTS ONLY! */
+	.CheckList {
+		padding:13px 0px 0px 0px;
+	}	
+	.CheckList ul li {
+		font-size: 18px;
+		font-weight: 300;
+		line-height: 23px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+	.MobileListItem {
+		position: relative;
+		top: -5px;
+	}
+	.MobileListItemDoubleLine .fa-check-circle {
+		float: left; 
+		margin-left: 30px; 
+		margin-top: 7px;
+	}
+	.MobileListItemDoubleLine div {
+		width: 190px; 
+		margin-left: 60px;
+	}	
+	.MobileListItem span {
+		color: #2daae1;
+		font-weight: 600;	
+	}
+	.fa-check-circle, .fa-times-circle {
+		font-size: 30px;
+	}
+	.WorldParty {
+		text-align: left;
+		padding-left: 30px;
+		padding-right: 30px;	
+	}
+	.WorldPartyTickets /* the number at the left to the "Tickets to the HR Tech World Party" list item */
+	{
+		font-size: 30px;
+		font-weight: 600;
+		color: #2daae1;
+		float: left; 
+		margin-left: 0px; 
+		margin-top: 10px;
+	}
+	.WorldParty div {
+	 	width: 190px; margin-left: 45px;
+	}
+}
+
+/* FAQ */
+#FAQContainer {
+	width: 100%;
+	max-width: 956px;
+	margin: 0 auto;
+	margin-top: 70px;
+	margin-bottom: 50px;
+	border-top: 1px solid #353535;
+}
+@media (max-width: 1360px) {
+	#FAQContainer {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+#FAQContainer a{
+	position:relative;
+	top: -110px;	
+	}
+	
+@media (max-width: 718px) {
+#FAQContainer a {
+		top: -75px;	
+	}	
+}	
+#FAQContainer h1 {
+	color: #2daae1;
+	margin-top: 35px;
+	margin-bottom: 25px;
+}
+#FAQContainer h2 {
+	font-size: 30px;
+	font-weight: 300;
+	color: #353535;
+	margin-bottom: 40px;
+}
+@media (max-width: 759px) {
+	#FAQContainer h2 {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}		
+}
+.Question { /* Questions */
+	color: #2daae1;	
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 24px;
+	margin-top: 25px;
+}
+.Answer { 
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 24px;
+}
+@media (max-width: 759px) { /* Hide the answers and activate the onClick function to show them on mobile */
+	.Question {
+		cursor: pointer;	
+	}
+	.Answer {	
+		display: none;
+	}
+}

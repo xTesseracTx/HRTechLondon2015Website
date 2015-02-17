@@ -1,0 +1,104 @@
+#numbers {
+	position: relative;
+	top: -200px;
+}
+#numbers-container {
+	background: url(../img/numbers-bg.jpg) no-repeat;
+	background-size: cover;
+	min-height: 400px;
+	padding: 125px 150px;
+	width: 100%;
+}
+
+.counters strong {
+	text-align: center;
+}
+.counters label {
+	display: block;
+	margin-top: 45px;
+	font-weight: 400;
+	font-size: 28px;
+	text-align: center;
+	color: #fff;
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+}
+
+@media (max-width:991px) {
+#numbers-container {
+	padding: 50px 0;
+	max-height: 450px;
+}
+}
+
+@media (max-width:373px) {
+#numbers-container {
+	padding: 0 0;
+	max-height: 530px;
+}
+}
+/*NUMBERS STATISTIC COUNTER AND CAROUSEL RESPONSIVE DEFS*/
+.stat-container {
+	display: flex !important;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	max-width: 92.5rem;
+}
+.stat-element {
+	flex-grow: 1;
+}
+
+@media (max-width:768px) {
+.stat-container {
+	flex-wrap: wrap;
+}
+}
+
+@media (max-width:990px) {
+.stat-element {
+	margin-top: 65px;
+}
+.stat-element strong, .stat-element sup {
+	font-size: 80px !important;
+}
+.stat-element sup {
+	font-size: 50px !important;
+}
+.stat-element label {
+	font-size: 22px !important;
+}
+#twentymillion {
+	top: 0;
+}
+}
+
+@media (max-width:635px) {
+.stat-element {
+	margin-top: 20px;
+}
+}
+
+@media (max-width:1100px) {
+#numbers-container {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+}
+
+/*END: NUMBERS STATISTIC COUNTER AND CAROUSEL RESPONSIVE DEFS*/
+
+
+/* Counters */
+.counters{
+	display: inline-block;
+	font-weight: 600;
+	font-size: 95px;
+	line-height: 60px;
+}

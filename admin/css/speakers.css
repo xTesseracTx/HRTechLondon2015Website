@@ -1,0 +1,314 @@
+/*CSS definitions of the SPEAKERS grid and the modals*/
+
+/*General defs of the SPEAKERS page*/
+body {
+  line-height: normal;
+}
+p {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-size: inherit;
+}
+a {
+  color: #000;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.RobotoText {
+  font-family: 'Roboto', sans-serif;
+}
+.OswaldText {
+  font-family: 'Oswald', sans-serif;
+}
+.HRNBlue {
+  color: #00a8c6;
+}
+.NoSpeakerInfoBlack {
+  color: #323232;
+}
+/*END General defs of the SPEAKERS page*/
+
+.tp-banner-container {
+	margin-top:100px;
+	}
+#StickySocialIconSidebar{
+	top:60%;
+	}
+#HeaderGetTicketsButton  {
+	top:2px;
+	padding-top:9px;
+	}	
+	
+#Speakers {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-between;
+  
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -webkit-align-items: space-between;
+  
+  display: -moz-flex;
+  -moz-flex-wrap: wrap;
+  -moz-justify-content: center;
+  -moz-align-items: space-between;
+}
+
+#SpeakerHeadline	{
+	clear:both;
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	margin-top:36px;
+	color:#2DAAE1;
+			
+}
+.Speaker {
+  width: 170px;
+  margin: 10px;
+}
+
+.InvisibleSpeakers {
+	
+    border: red;
+    border-style: inset;
+
+}
+
+.InvisibleDiv {
+	max-width: 120px;
+	text-align: center;
+	background-color: rgb(44, 154, 173);
+	color: white;
+	font-size: 14px;
+	padding: 5px;
+	cursor: pointer;
+	transition: all 0.3s;
+	margin: 0 auto;	
+	
+}
+.InvisibleDiv:hover {
+	background-color: rgb(52, 173, 44);
+	transition: all 0.3s;
+}
+
+.HiddenSpeaker {
+	display:none;
+}
+
+.SpeakerPhoto{
+ /* width: 170px;*/
+  height: 170px;
+  background-size: cover;
+}
+
+/* Sponsor Delete X sign */
+.SpeakerDelete {
+  text-align: left;
+  width: 30px;
+  /*height: 20px;*/
+  padding: 6px 6px 6px 7px;
+  background-color: #ddd;
+  border-radius: 150px;
+}
+.SpeakerDelete:hover {
+  background-color: #FF8686;
+  cursor: pointer;
+}
+.SpeakerDelete:hover p {
+  color: #fff;
+}
+
+.EventDetails {
+  visibility: hidden;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+  transition: visibility 0.3s, opacity 0.3s linear;
+}
+.EventTitle     {padding-bottom: 15px;}
+.LongEventTitle {padding-bottom: 0px;}
+
+.Speaker:hover .EventDetails{
+  -webkit-backface-visibility: hidden;
+  opacity: 1;
+  visibility: visible;
+}
+.SpeakerName {
+  font-size: 1.8em;
+  padding-top: 5px;
+  text-transform: uppercase;
+}
+.SpeakerCompanyName {font-size: 1.2em;}
+
+/*-----MODAL DEFINITIONS------*/
+.modal-dialog  {margin-top: 60px;}
+.modal-content {border-radius: 0;}
+.modal-body    {background-color: #F5F5F5;}
+
+.close, .close:hover {
+  opacity: 1;
+  position: relative;
+  top: -40px;
+  right: -40px;
+}
+.ModalSpeakerPhoto {
+  margin: 0 auto;
+  width: 170px;
+  height: 170px;
+}
+.ModalSpeakerBioContainer {
+  text-align: center;
+  color: #323232;
+}
+.ModalSpeakerName {
+  font-size: 4em;
+  text-transform: uppercase;
+  color: #323232;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.ModalSpeakerJobtitle {
+  font-size: 1.8em;
+  font-weight: 300;
+}
+.ModalSpeakerCompanyLink {
+  font-size: 1.8em;
+  font-weight: 400;
+  color: #00a8c6;
+}
+.ModalSpeakerCompanyLink:hover {
+  color: #35B0E3;
+}
+.ModalDivider {
+  border-top: 1px solid #b3b3b3;
+  height: 1px;
+  margin: 20px auto 20px auto;
+  width: 40px;
+}
+.SocialIcons {display:inline;}
+.SocialIcons .fa {
+  font-size: 14px;
+  color: #fff;
+  background: #323232;
+  padding: 7px;
+  border-radius: 900px;
+  margin: 0 2px;
+}
+.SocialIcons .fa-facebook { padding: 7px 10px; }
+.SocialIcons .fa-facebook:hover {background: #3b5998;}
+.SocialIcons .fa-twitter:hover  {background: #4099ff;}
+.SocialIcons .fa-linkedin:hover {background: #0e76a8;}
+.SocialIcons .fa-google { padding: 8px 8px 6px 8px; }
+.SocialIcons .fa-google:hover {background: #1F48A9;}
+.SocialIcons .fa-flickr:hover {background: #FF0084;}
+.SocialIcons .fa-rss:hover {background: #C52C02;}
+.ModalSpeakerBio {
+  font-size: 1.7em;
+  line-height: 1.7em;
+  font-weight: 300;
+  text-align: left;
+  padding: 25px;
+}
+.ModalSpeakerBioHighlight {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.ModalSpeakerBioHighlight:after {
+  content: ' ';
+  clear: right;
+  display: block;
+}
+@media(max-width:767px){
+  .modal-dialog {
+    margin: 0;
+    width: 100%;
+  }
+  .close, .close:hover {
+    top: 0px;
+    right: 0px;
+  }
+  .ModalSpeakerBio {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media(max-width:380px){
+  .Speaker, .SpeakerPhoto {
+    width: 120px;
+  }
+  .SpeakerPhoto {
+    height: 120px;
+  }
+  .Speaker:hover .EventDetails{
+    visibility: hidden;
+    opacity: 0;
+  }
+  .close img {
+    width: 35px;
+    height: 35px;
+  }
+}
+/*----- END MODAL DEFINITIONS------*/
+/*END SPEAKERS*/
+/*STICKY SOCIAL ICON ALIGMENTS*/
+.StickySocialIcon {
+  padding-top: 2px;
+}
+.StickyFlickrIcon img{
+    position: relative;
+    top: -3px;
+}
+.StickySlideshareIcon img{
+    position: relative;
+    top: -3px;
+}
+/*END STICKY SOCIAL ICON ALIGMENTS*/
+/*FOOTER ALIGNMENTS (because Foundation and Bootstrap uses the same ".row" named class..) */
+#blackfooter .row, #greyfooter-container .row {
+  max-width: 1480px;
+  margin-left: auto; margin-right: auto;
+}
+/*END FOOTER ALIGNMENTS*/
+
+/*Mobile menu margin for the content*/
+@media (max-width:640px){
+ .tp-banner-container, .tp-banner{
+	 display:none;
+	 visibility:hidden;
+	 } 
+  
+#Speakers {
+	margin-top:0;
+	}
+	  
+#SpeakerHeadline	{
+	margin-top:100px;
+	display:block;
+}	  
+}
+/*Mobile menu fa-bars button alignment*/
+.fa-bars {
+  position: relative;
+  top: -7px;
+}
+/*end Mobile menu fa-bars button alignment*/

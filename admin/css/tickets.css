@@ -1,0 +1,156 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+#tickets-header-container {
+	min-height: 285px;
+	width: 100%;
+	background: url(../img/tickets-header-background.png) no-repeat;
+	background-size: cover;
+	text-align: center;
+	padding: 20px 0;
+	margin-top: 0px;
+	margin-top: 100px;
+}
+#tickets-header-container h1 {
+	margin-top: 50px;
+	color: #fff;
+	font-weight: bolder;
+	font-size: 60px;
+	line-height: 50px;
+	margin-bottom: 30px;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+}
+#tickets-header-container p {
+	color: #fff;
+	font-weight: 300;
+	font-size: 24px;
+	font-family: 'Roboto', sans-serif;
+	max-width: 840px;
+	margin: 0 auto;
+	font-weight: 400;
+}
+#TicketsMainContainer {
+	width: 100%;
+	text-align: center;
+	padding: 30px 0;
+	max-width: 600px;
+	margin: 0 auto;
+}
+#TicketsMainContainer h1 {
+	font-size: 36px;
+	font-family: 'Oswald', sans-serif;
+	display: inline-block;
+}
+#TicketsMainContainer img {
+	width: 43px;
+	height: 35px;
+	display: inline-block;
+	margin-top: -25px;
+	margin-right: 20px;
+}
+#TicketsMainContainer h4 {
+	font-size: 30px;
+	font-family: 'Oswald', sans-serif;
+}
+#TicketsMainContainer p {
+	font-size: 18px;
+	margin-top:10px;
+	line-height: 20px;
+	font-family: 'Roboto', sans-serif;
+	text-align: justify;
+	text-align-last: left;
+	-webkit-text-align-last: left;
+	-moz-text-align-last: left;
+	-ms-text-align-last: left;
+	-o-text-align-last: left;
+	font-weight: 300;
+}
+.DiscountButton {
+	margin: 0 auto;
+	margin-top: 35px;
+	max-width: 600px;
+	width: 100%;
+	height: 90px;
+	font-size: 34px;
+	font-family: 'Oswald', sans-serif;
+	padding: 35px 15px;
+}
+.LeftFloat {
+	float: left;
+	font-weight: 300;
+}
+.RightFloat {
+	float: right;
+}
+#OneDelegateDiscount {
+	color: #FC354C;
+	border:3px solid #FC354C;
+	font-weight: 100;
+	transition: all 0.2s;
+}
+#OneDelegateDiscount:hover {
+	color:#fff;
+	background:#FC354C;
+}
+#ThreeDelegateDiscount {
+	border:3px solid #16AAE1;
+	font-weight: 100;
+	transition: all 0.2s;
+}
+#ThreeDelegateDiscount:hover {
+	background: #16AAE1;
+	color:#fff;
+}
+#DiscountCode {
+	
+	border: 3px solid #333333;
+	font-weight: 100;
+	transition: all 0.2s;
+	margin-bottom: 35px;
+	color: #333333;
+}
+#DiscountCode:hover {
+	background: #333333;
+	color:#fff;
+}
+
+@media (max-width:718px) {
+#tickets-header-container {
+	margin-top: 50px;
+}
+}
+@media (max-width:430px) {
+.DiscountButton {
+	font-size: 30px;
+}
+#tickets-header-container p {
+	font-size: 20px;
+	line-height: 24px;
+}
+#tickets-header-container h1 {
+	margin-top: 18px;
+	font-size: 48px;
+}
+#TicketsMainContainer h1 {
+	font-size: 30px;
+}
+#TicketsMainContainer img {
+	width: auto;
+	height: 30px;
+}
+}
+@media (max-width:380px) {
+.DiscountButton {
+ font-size:24px;
+}
+}
+/*Mobile menu margin for the content*/
+@media (max-width:640px){
+  #tickets-header-container{
+    margin-top: 50px !important;
+  }
+}
+/*end mobile menu margin for the content*/

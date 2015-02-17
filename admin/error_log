@@ -1,0 +1,30 @@
+[15-Jan-2015 12:57:40 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'hrtech'@'localhost' (using password: YES) in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 11
+[15-Jan-2015 12:57:40 America/Denver] PHP Warning:  mysqli_errno() expects parameter 1 to be mysqli, boolean given in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 13
+[15-Jan-2015 12:57:40 America/Denver] PHP Fatal error:  Call to a member function query() on a non-object in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 19
+[15-Jan-2015 12:58:56 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'hrtech'@'localhost' (using password: YES) in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 11
+[15-Jan-2015 12:58:56 America/Denver] PHP Warning:  mysqli_errno() expects parameter 1 to be mysqli, boolean given in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 13
+[15-Jan-2015 12:58:56 America/Denver] PHP Fatal error:  Call to a member function query() on a non-object in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 19
+[15-Jan-2015 12:59:06 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'hrtech'@'localhost' (using password: YES) in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 11
+[15-Jan-2015 12:59:06 America/Denver] PHP Warning:  mysqli_errno() expects parameter 1 to be mysqli, boolean given in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 13
+[15-Jan-2015 12:59:06 America/Denver] PHP Fatal error:  Call to a member function query() on a non-object in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 19
+[15-Jan-2015 12:59:11 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'hrtech'@'localhost' (using password: YES) in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 11
+[15-Jan-2015 12:59:11 America/Denver] PHP Warning:  mysqli_errno() expects parameter 1 to be mysqli, boolean given in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 13
+[15-Jan-2015 12:59:11 America/Denver] PHP Fatal error:  Call to a member function query() on a non-object in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 19
+[15-Jan-2015 12:59:17 America/Denver] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'hrtech'@'localhost' (using password: YES) in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 11
+[15-Jan-2015 12:59:17 America/Denver] PHP Warning:  mysqli_errno() expects parameter 1 to be mysqli, boolean given in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 13
+[15-Jan-2015 12:59:17 America/Denver] PHP Fatal error:  Call to a member function query() on a non-object in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/config.php on line 19
+[16-Jan-2015 00:25:34 America/Denver] PHP Fatal error:  Class 'agenda?introduction-from-the-mc_Edit=Introduction+From+the+MC' not found in /home/irecruit/public_html/DEVHRTechLondon/admin/index.php on line 49
+[16-Jan-2015 00:25:40 America/Denver] PHP Fatal error:  Class 'agenda?introduction-from-the-mc_Edit=Introduction+From+the+MC' not found in /home/irecruit/public_html/DEVHRTechLondon/admin/index.php on line 49
+[16-Jan-2015 00:26:40 America/Denver] PHP Fatal error:  Class 'agenda?introduction-from-the-mc_Edit=Introduction+From+the+MC' not found in /home/irecruit/public_html/DEVHRTechLondon/admin/index.php on line 49
+[16-Jan-2015 00:27:26 America/Denver] PHP Fatal error:  Class 'agenda?introduction-from-the-mc_Edit=Introduction+From+the+MC' not found in /home/irecruit/public_html/DEVHRTechLondon/admin/index.php on line 49
+[16-Jan-2015 02:04:04 America/Denver] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or '$' in /home/irecruit/public_html/DEVHRTechLondon/admin/controllers/agenda_main.php on line 36
+[19-Jan-2015 06:50:32 America/Denver] PHP Fatal error:  Class 'blogsquad' not found in /home/irecruit/public_html/HRTechLondon2015Website/admin/index.php on line 49
+[20-Jan-2015 02:44:03 America/Denver] PHP Fatal error:  Class 'speaker' not found in /home/irecruit/public_html/HRTechLondon2015Website/admin/index.php on line 49
+[20-Jan-2015 05:52:44 America/Denver] PHP Fatal error:  Class 'tutorial' not found in /home/irecruit/public_html/HRTechLondon2015Website/admin/index.php on line 49
+[20-Jan-2015 05:57:31 America/Denver] PHP Fatal error:  Class 'tutorial' not found in /home/irecruit/public_html/HRTechLondon2015Website/admin/index.php on line 49
+[24-Jan-2015 22:34:48 America/Denver] PHP Fatal error:  Class 'contact' not found in /home/irecruit/public_html/HRTechLondon2015Website/admin/index.php on line 49
+[24-Jan-2015 22:35:11 America/Denver] PHP Fatal error:  Class 'trkInfo=tarId%3A1421924209258%2Ctas%3Avitesse%20media%2Cidx%3A1-1-1' not found in /home/irecruit/public_html/HRTechLondon2015Website/admin/index.php on line 49
+[24-Jan-2015 22:36:30 America/Denver] PHP Fatal error:  Class 'tickets' not found in /home/irecruit/public_html/HRTechLondon2015Website/admin/index.php on line 49
+[26-Jan-2015 05:16:58 America/Denver] PHP Fatal error:  Class 'blank.gif' not found in /home/irecruit/public_html/HRTechLondon2015Website/admin/index.php on line 49
+[26-Jan-2015 05:17:32 America/Denver] PHP Fatal error:  Class 'blank.gif' not found in /home/irecruit/public_html/HRTechLondon2015Website/admin/index.php on line 49
+[27-Jan-2015 02:16:52 America/Denver] PHP Fatal error:  Class 'agendathe-journey-from-individual-excel-spreadsheets-to-hr-reporting-to-hr-analytics' not found in /home/irecruit/public_html/HRTechLondon2015Website/admin/index.php on line 49

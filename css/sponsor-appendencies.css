@@ -1,0 +1,276 @@
+@charset "utf-8";
+/* CSS Document of the HR Tech London 2015 Sponsor Appendencies page */
+
+/* General definitions */
+table {
+	border: none;
+}
+table * {
+	background-color: #fff;	
+}
+/* End General Definitions */
+
+/* Override Tooltipster */
+.tooltipster-default {
+	border: 3px solid #fc354c;
+	background: none repeat scroll 0 0 #f3d3d6;	
+	color: #353535;
+}
+/* end Override Tooltipster*/
+
+/* Header */
+.ImageHeader {
+	width: 100%;
+	background-image: url(../img/sponsor-appendencies/sponsor-appendencies-header-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-top: 100px;	
+	padding-top: 100px;
+}
+@media (max-width: 720px) {
+	.ImageHeader {
+		margin-top: 60px;	
+	}
+}
+@media (max-width: 480px) {
+	.ImageHeader {
+		padding-top: 60px;
+	}
+}
+/* end Header */
+
+#MainContent {
+	width: 100%;
+	max-width: 956px;	
+	margin: 0 auto;
+	margin-top: 70px;
+}
+#MainContent * {
+	transition: all 0.3s;	
+}
+
+/* Downloads */
+#DownloadsContainer h1 {
+	font-family: 'Oswald',sans-serif;
+	font-size: 36px;
+	color: #2daae1;	
+	margin-bottom: 20px;
+}
+#DownloadAllContainer {
+	float: left;	
+}
+@media (max-width: 720px) {
+	#DownloadAllContainer {
+		float: none;	
+	}		
+}
+#Downloads {
+	width: 395px;
+	padding: 40px 0px 20px 25px;
+	background-color: #f5f4f3;	
+}
+@media (max-width: 720px) {
+	#Downloads {
+		width: 100%;
+		paddig-right: 25px;	
+	}		
+}
+#Downloads h1 {
+	margin-bottom: 30px;
+}
+#Downloads ol {
+	list-style-position: inside;
+	margin-left: 0px;	
+}
+#Downloads ol li {
+	line-height: 35px;	
+	color: #353535;
+	font-size: 20px;
+}
+#Downloads ol li:hover {
+	font-size: 21px;
+}
+#DownloadAllButton {
+	width: 100%;
+	text-transform: uppercase;
+	color: #fff;
+	background: #2daae1;	
+	font-size: 26px;
+	padding: 22px;
+	text-align: center;
+	margin: 40px 0;
+}
+#DownloadAllButton:hover {
+	background: #FC354C;	
+}
+#Recommendations {
+	width: 510px;
+	float: right;
+}
+@media (max-width: 720px) {
+	#Recommendations {
+		width: 100%;
+		float: none;
+		padding-left: 25px;
+		padding-right: 25px;
+	}		
+}
+#Recommendations p, #Recommendations ul {
+	line-height: 23px;
+	font-size: 18px;
+}
+#Recommendations ul {
+	list-style-type: none;	
+}
+#Recommendations ul li:before {    
+	font-family: 'FontAwesome';
+	content: '\f067'; /* + symbol */
+	margin: 0 20px 0 -15px;
+	color: #2daae1;
+}
+#Recommendations #Compulsory li:before {
+	content: '\f00c'; /* check-mark symbol */
+}
+/* end Downloads */
+
+/* Deadlines */
+#DeadlinesContainer {
+	clear: both;
+	padding-top: 30px;	
+}
+#DeadlinesContainer h1{
+	text-align: center;
+	background: #fc354c;
+	text-transform: uppercase;
+	font-size: 36px;
+	font-family: 'Oswald', sans-serif;
+	color: #fff;
+	padding: 10px;
+}
+#DeadlinesContainer table {
+	margin-top: 35px;
+}
+#DeadlinesContainer table thead tr td{
+	font-family: 'Oswald', sans-serif;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 400;
+	padding:0 0 35px 0;
+}
+@media (max-width: 800px) {
+	#DeadlinesContainer table thead tr td{	
+		width: 200px;
+	}
+}
+.ItemDeadline {
+	color: #fc354c;
+	font-weight: 600;
+	font-size: 18px;
+	padding-left: 0;	
+}
+.ItemDescription {
+	font-size: 18px;
+}
+/* Deadlines */
+
+/* Calendar */
+#CalendarContainer {
+	margin-top: 60px;	
+	margin-bottom: 60px;
+}
+#CalendarContainer h1 {
+	font-size: 36px;
+	color: #a5a5a5;
+	font-family: 'Oswald', sans-serif;	
+}
+@media (max-width: 720px) {
+	#CalendarContainer h1 {
+		font-size: 24px;
+	}
+}
+#FebruaryButton:hover, #MarchButton:hover, .ActiveMonth {
+	color: #353535;
+	cursor: pointer;
+}
+.Calendar {
+	margin-top: 25px;
+	border-collapse: collapse;
+}
+.Calendar * {
+	font-size: 18px;	
+}
+#MarchCalendar {
+	display: none;	
+}
+.Calendar thead {
+	border-left: 16px solid #353535;	
+	border-right: 16px solid #353535;	
+}
+.Calendar thead tr td {
+	font-weight: 400;
+	text-align: center;	
+	background-color: #353535;
+	color: #fff;
+	padding: 13px;
+}
+.Calendar tbody {
+		border-left: 16px solid #353535;		
+		border-right: 16px solid #353535;	
+		border-bottom: 16px solid #353535;	
+}
+.Calendar tbody tr td{
+	width: 130px;
+	height: 75px;
+	border: 1px solid #9b9b92;	
+	text-align: right;
+	vertical-align: top;
+}
+.NotDayOfTheMonth {
+	color: #9b9b92;	
+}
+.Calendar tbody tr td.HighlightedDay {
+	background-color: #fc5367;	
+	color: #fff;
+}
+.Calendar tbody tr td.HighlightedDay:hover {
+	background-color: rgba(252, 83, 103, 0.85);	
+	cursor: pointer;
+}
+/* end Calendar */
+
+/* Contact */
+#ContactMembersContainer {
+    text-align: center;
+	margin: 75px 0 75px 0;
+}
+.ContactMember {
+	margin:10px 20px 20px 20px;
+	display:inline-block;
+}
+.ContactMember div img {
+	width: 202px;
+	height: 202px;	
+}
+.ContactMember p{
+    max-width: 205px;
+    margin: 0 auto;
+    text-align: left;
+	font-size: 1.3rem;
+}
+#GreenTitle {
+	color:#8fbe00;
+}
+#RedTitle {
+	color:#fc354c;
+}
+#OrangeTitle {
+	color:#ff8e2d;
+}
+#BlueTitle {
+	color:#56aecf;
+}
+.ContactPhoneNumber {
+    font-size: 15px;
+}
+/* end Contact*/ 

@@ -1,0 +1,709 @@
+/*CSS definitions of the AGENDA section of the page */
+
+body div {
+  box-sizing: border-box;
+  line-height: normal;
+}
+
+.BlueText   { color: #00a8c6; }
+.RedText    { color: #DF1E34; }
+
+#Agenda {
+  padding:10px;
+}
+
+#AgendaNavigation, #Agenda {
+  max-width: 970px;
+  margin: 0 auto;
+}
+#AgendaNavigation {
+  display: flex;
+  flex-wrap: no-wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  
+  display: -webkit-flex;
+  -webkit-flex-wrap: no-wrap;
+  -webkit-align-items: flex-end;
+  -webkit-justify-content: space-between;
+  
+  display: -moz-flex;
+  -moz-flex-wrap: no-wrap;
+  -moz-align-items: flex-end;
+  -moz-justify-content: space-between;  
+}
+#AgendaTitle { font-size: 3.6em; }
+#day-selector, #session-selector, #hour-selector {
+  border: 1px solid #bbbbbb;
+  font-size: 1.7em;
+  line-height: 2.3em;
+  height: 50px;
+  margin-top: 30px;
+  padding-left: 10px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  margin-left: 20px;
+  width: 220px;
+}
+
+.DayTextContainer{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: flex-start;
+  
+  display: -moz-flex;
+  -moz-align-items: center;
+  -moz-justify-content: flex-start;  
+  
+  margin-top: 20px;
+}
+.Day1Border{ border-bottom: 2px solid #00a8c6; }
+.Day2Border{ border-bottom: 2px solid #DF1E34; }
+
+
+.StageName {
+  font-size: 2.8em;
+  font-weight: 400;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 115px;
+}
+.StageName > a {
+	position: relative; 
+	top: -110px;	
+}
+@media (max-width: 718px) {
+	.StageName > a {
+		top: -75px;	
+	}	
+}
+.StageImage {
+  margin-left: -90px; margin-right: 40px;
+}
+.DayNumberText {
+  font-size: 6em;
+  text-transform: uppercase;
+  padding-right: 5px;
+}
+.DayNameText {
+  font-size: 2.3em;
+  text-transform: uppercase;
+}
+.DayMonthText { color: #3f3f3f; }
+
+.Session > a {
+  display: block;
+  content: " ";
+  margin-top: -130px;
+  height: 130px;
+  visibility: hidden;
+}
+
+.Session {
+  width: 100%;
+  min-height: 25px;
+  font-size: 1.7em;
+  color: #333333;
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.SessionHeader {
+  padding: 10px;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+
+.SessionTime {
+  display: inline-block;
+  padding-left: 10px;
+  width: 100px;
+}
+.LongSessionTime {
+  position: relative;
+  top: -22px;
+}
+.SessionTitle     { display: inline-block;  /*font-weight: 700;*/}
+.LongSessionTitle { max-width: 770px; /*font-weight: 700;*/}
+.Session .agenda-icon {
+  float: right;
+  padding-top: 0;
+  font-size: 20px;
+  position: absolute; top: 8px; right: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+}
+.Session .fa-microphone { color: #8b8b8b; }
+.SessionTitle .icon-next-icon { position: relative; left: 7px; top: 2px; }
+.HighlightedSession { background-color: #EEEEEE; }
+/*.HighlightedSession .SessionTitle { font-weight: 400; }*/
+
+.SessionHeader:hover {
+  cursor: pointer;
+}
+
+
+/* Headline hover effects */
+#Day1MainContainer .MainStage .SessionHeader:hover, .MainStageOneMod {
+  transition: all 0.2s;
+  background-color: #00a8c6;
+  color: #fff;
+}
+#Day2MainContainer .MainStage .SessionHeader:hover, .MainStageTwoMod {
+  transition: all 0.2s;
+  background-color: #DF1E34;
+  color: #fff;
+}
+.HRShare .SessionHeader:hover, .HRShareMod {
+  transition: all 0.2s;
+  background-color: #88983f;
+  color: #fff;
+}
+.FutureOfWork .SessionHeader:hover, .FutureOfWorkMod {
+  transition: all 0.2s;
+  background-color: #fcaf17;
+  color: #fff;
+}
+.HRTech .SessionHeader:hover, .HRTechMod {
+  transition: all 0.2s;
+  background-color: #db6922;
+  color: #fff;
+}
+.TalentAndRecruitment .SessionHeader:hover, .TalentAndRecruitmentMod {
+  transition: all 0.2s;
+  background-color: #00b2b9;
+  color: #fff;
+}
+.SocialCollaboration .SessionHeader:hover, .SocialCollaborationMod {
+  transition: all 0.2s;
+  background-color: #008743;
+  color: #fff;
+}
+.Labs .SessionHeader:hover, .LabsMod {
+  transition: all 0.2s;
+  background-color: #2f7dc1;
+  color: #fff;
+}
+.RoundTable .SessionHeader:hover, .RoundTableMod {
+  transition: all 0.2s;
+  background-color: #2e3192;
+  color: #fff;
+}
+.Compensation .SessionHeader:hover, .CompensationMod {
+  transition: all 0.2s;
+  background-color: #ce181e;
+  color: #fff;
+}
+.CloudTech .SessionHeader:hover, .CloudTechMod {
+  transition: all 0.2s;
+  background-color: #8298cd;
+  color: #fff;
+}
+.HRAnalytics .SessionHeader:hover, .HRAnalyticsMod {
+  transition: all 0.2s;
+  background-color: #a155a1;
+  color: #fff;
+}
+
+.UserAdoption .SessionHeader:hover, .UserAdoptionMod {
+  transition: all 0.2s;
+  background-color: #ff6666;
+  color: #fff;
+}
+
+.ProductDemo .SessionHeader:hover, .ProductDemoMod {
+  transition: all 0.2s;
+  background-color: #cc3333;
+  color: #fff;
+}
+/*end Headline hover effects */
+
+/*Moderator hover effects */
+.MainStageOneMod .SessionHeader:hover {
+  transition: all 0.2s;
+  color: #00a8c6;
+  background-color: #fff;
+}
+.MainStageTwoMod .SessionHeader:hover {
+  transition: all 0.2s;
+  color: #DF1E34;
+  background-color: #fff;
+}
+.HRShareMod .SessionHeader:hover {
+  transition: all 0.2s;
+  color: #88983f;
+  background-color: #fff;
+}
+.FutureOfWorkMod .SessionHeader:hover {
+  transition: all 0.2s;
+  color: #fcaf17;
+  background-color: #fff;
+}
+.HRTechMod .SessionHeader:hover {
+  transition: all 0.2s;
+  color: #db6922;
+  background-color: #fff;
+}
+.TalentAndRecruitmentMod .SessionHeader:hover {
+  transition: all 0.2s;
+  color: #00b2b9;
+  background-color: #fff;
+}
+.SocialCollaborationMod .SessionHeader:hover {
+  transition: all 0.2s;
+  color: #008743;
+  background-color: #fff;
+}
+.LabsMod .SessionHeader:hover {
+  transition: all 0.2s;
+  color: #2f7dc1;
+  background-color: #fff;
+}
+.RoundTableMod .SessionHeader:hover {
+  transition: all 0.2s;
+  color: #2e3192;
+  background-color: #fff;
+}
+.CompensationMod .SessionHeader:hover {
+  transition: all 0.2s;
+  color: #ce181e;
+  background-color: #fff;
+}
+.CloudTechMod .SessionHeader:hover {
+  transition: all 0.2s;
+  color: #8298cd;
+  background-color: #fff;
+}
+.HRAnalyticsMod .SessionHeader:hover {
+  transition: all 0.2s;
+  color: #a155a1;
+  background-color: #fff;
+}
+
+.UserAdoptionMod .SessionHeader:hover {
+  transition: all 0.2s;
+  color: #ff6666;
+  background-color: #fff;
+}
+
+.ProductDemoMod .SessionHeader:hover {
+  transition: all 0.2s;
+  color: #cc3333;
+  background-color: #fff;
+}
+
+/*end Moderator hover effects */
+
+.NonCollapsibleSession {
+  cursor: default !important;
+  background-color: #EEEEEE !important;
+}
+.EmptySession {
+  cursor: default !important;
+}
+
+.day1-no-event, .day2-no-event { display: none; }
+
+/*STICKY SOCIAL ICON ALIGMENTS*/
+.StickySocialIcon {
+  padding-top: 2px;
+}
+.StickyFlickrIcon img{
+    position: relative;
+    top: -3px;
+}
+.StickySlideshareIcon img{
+    position: relative;
+    top: -3px;
+}
+/*END STICKY SOCIAL ICON ALIGMENTS*/
+
+/*-----MODAL DEFINITIONS------*/
+.modal-dialog {
+	margin-top: 60px;
+}
+.modal-content {
+	border-radius: 0;
+}
+.modal-body {
+	background-color: #F5F5F5;
+}
+.close, .close:hover {
+	opacity: 1;
+	position: relative;
+	top: -40px;
+	right: -40px;
+}
+.ModalSpeakerPhoto {
+	margin: 0 auto;
+	width: 170px;
+	height: 170px;
+	background-size: cover;
+}
+.ModalSpeakerBioContainer {
+	text-align: center;
+	color: #323232;
+}
+.ModalSpeakerName {
+	font-size: 4em;
+	text-transform: uppercase;
+	color: #323232;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+.ModalSpeakerJobtitle {
+	font-size: 1.8em;
+	font-weight: 300;
+}
+.ModalSpeakerCompanyLink {
+	font-size: 1.8em;
+	font-weight: 400;
+	color: #00a8c6;
+}
+.ModalSpeakerCompanyLink:hover {
+	color: #35B0E3;
+}
+
+/*PREV and NEXT modal Selectors */
+#ModalLeftArrow, #ModalRightArrow {
+	display:none;
+
+}
+
+	
+
+	
+
+.ModalDivider {
+	border-top: 1px solid #b3b3b3;
+	height: 1px;
+	margin: 20px auto 20px auto;
+	width: 40px;
+}
+.SocialIcons {
+	display: inline;
+}
+.SocialIcons .fa {
+	font-size: 14px;
+	color: #fff;
+	background: #323232;
+	padding: 7px;
+	border-radius: 900px;
+	margin: 0 2px;
+}
+.SocialIcons .fa-facebook {
+	padding: 7px 10px;
+}
+.SocialIcons .fa-facebook:hover {
+	background: #3b5998;
+}
+.SocialIcons .fa-twitter:hover {
+	background: #4099ff;
+}
+.SocialIcons .fa-linkedin:hover {
+	background: #0e76a8;
+}
+.SocialIcons .fa-google {
+	padding: 8px 8px 6px 8px;
+}
+.SocialIcons .fa-google:hover {
+	background: #1F48A9;
+}
+.SocialIcons .fa-flickr:hover {
+	background: #FF0084;
+}
+.SocialIcons .fa-rss:hover {
+	background: #C52C02;
+}
+.ModalSpeakerBio {
+	font-size: 1.7em;
+	line-height: 1.7em;
+	font-weight: 300;
+	text-align: left;
+	padding: 25px;
+}
+.ModalSpeakerBio a {
+	color: #00a8c6;
+}
+.ModalSpeakerBio a:hover {
+	color: #35B0E3;
+}
+.ModalSpeakerBioHighlight {
+	font-size: 1.2em;
+	font-weight: 400;
+}
+.ModalSpeakerBioHighlight:after {
+	content: ' ';
+	clear: right;
+	display: block;
+}
+
+#BottomModalClose {
+	display:none;
+}
+@media(max-width:767px) {
+.modal-dialog {
+	margin: 0;
+	width: 100%;
+}
+	
+.close, .close:hover {
+	top: 0px;
+	right: 0px;
+}
+
+#BottomModalClose {
+	display:block;
+	right:5px;
+	bottom:5px;
+	}
+.ModalSpeakerBio {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+}
+
+@media(max-width:380px) {
+.Speaker, .SpeakerPhoto {
+	width: 120px;
+}
+.SpeakerPhoto {
+	height: 120px;
+}
+.Speaker:hover .EventDetails {
+	visibility: hidden;
+	opacity: 0;
+}
+.close img {
+	width: 35px;
+	height: 35px;
+}
+}
+/*----- END MODAL DEFINITIONS------*/
+
+
+
+/*Mobile menu fa-bars button alignment*/
+.fa-bars {
+  position: relative;
+  top: -7px;
+}
+/*end Mobile menu fa-bars button alignment*/
+
+/*AGENDA COLLAPSIBLE PANEL CSS*/
+.SessionContent {
+      display: none;
+	padding: 10px 10px 15px 20px;
+}
+.ShowSession {
+  display: block;
+}
+.SessionAbstract {
+	padding-left: 95px;
+	padding-right: 60px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	margin-bottom: 30px;
+	font-size: 17px;
+}
+.SpeakerinfoContainer {
+	padding-left: 95px;
+}
+.SpeakerContainer {
+	display: flex; justify-content: space-between;
+        display: -moz-flex; -moz-justify-content: space-between;
+        display: -webkit-flex; -webkit-justify-content: space-between;
+}
+.SpeakerinfoContainer a {
+	color: #404040;
+}
+.SpeakerContainer img {
+	width: 85px; height: 85px;
+}
+.SpeakerContainer img, .SpeakerDetails {
+	float: left;
+	margin-right: 30px;
+}
+.SpeakerDetails {
+	width: 60%;
+}
+.SessionSpeakerName {
+	font-weight: 700;
+	color: #323232;
+}
+.SessionJobtitle {
+	color: #898989;
+}
+.SessionCompanyName {
+	/*color: #00A8C6;*/
+	font-weight: 700;
+}
+.fa-map-marker, .fa-clock-o {
+	font-size: 19px;
+	padding-right: 10px;
+}
+.LocationDetails {
+	text-align: right;
+	line-height: 24px;
+}
+@media (max-width:991px) {
+  #Agenda { padding-top: 120px; }
+  .Session .agenda-icon { display: none; }
+  #AgendaNavigation     { display: block; }
+  #day-selector, #session-selector, #hour-selector {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+  .StageName { margin-left: 10px; }
+  .StageImage { margin-left: 0; margin-right: 20px;}
+  .SessionTime, .SessionTitle { display: block; }
+  .SessionTime     { padding-left: 0; }
+  .LongSessionTime { position: static; }  
+  
+	.SessionContent { padding-left: 10px; }
+	.SessionAbstract, .SpeakerinfoContainer { padding-left: 0; padding-right: 0;}
+	.SpeakerContainer {
+          flex-direction: column;
+          -moz-flex-direction: column;
+          -webkit-flex-direction: column;
+          }
+	.SpeakerDetails, .LocationDetails { width: 100%; }
+	.SpeakerDetails img { float: none; }
+	.LocationDetails { text-align:  left; }
+}
+
+@media (max-width: 720px){
+  #Agenda {padding-top: 100px;}
+}
+@media (max-width:640px){
+  #Agenda {padding-top: 50px;}
+}
+@media (max-width:512px){
+	.ImageHeader p {
+		font-size: 20px;
+		line-height: 26px;
+	}
+}
+/*Headline colors*/
+
+#Day1MainContainer .MainStage .SessionContent { border-bottom: 2px solid #00a8c6;}
+#Day1MainContainer .MainStage h4,
+#Day1MainContainer .MainStage .SessionCompanyName,
+#Day1MainContainer .MainStage .fa-map-marker,
+#Day1MainContainer .MainStage .fa-clock-o,
+#Day1MainContainer .MainStage .NonCollapsibleSession:hover {
+  color: #00a8c6;
+}
+
+#Day2MainContainer .MainStage .SessionContent { border-bottom: 2px solid #DF1E34;}
+#Day2MainContainer .MainStage h4,
+#Day2MainContainer .MainStage .SessionCompanyName,
+#Day2MainContainer .MainStage .fa-map-marker,
+#Day2MainContainer .MainStage .fa-clock-o,
+#Day2MainContainer .MainStage .NonCollapsibleSession:hover {
+  color: #DF1E34;
+}
+.HRShare .SessionContent { border-bottom: 2px solid #88983f;}
+.HRShare h4,
+.HRShare .SessionCompanyName,
+.HRShare .fa-map-marker,
+.HRShare .fa-clock-o,
+.HRShare .NonCollapsibleSession:hover {
+  color: #88983f;
+}
+.FutureOfWork .SessionContent { border-bottom: 2px solid #fcaf17;}
+.FutureOfWork h4,
+.FutureOfWork .SessionCompanyName,
+.FutureOfWork .fa-map-marker,
+.FutureOfWork .fa-clock-o,
+.FutureOfWork .NonCollapsibleSession:hover {
+  color: #fcaf17;
+}
+.HRTech .SessionContent { border-bottom: 2px solid #db6922;}
+.HRTech h4,
+.HRTech .SessionCompanyName,
+.HRTech .fa-map-marker,
+.HRTech .fa-clock-o,
+.HRTech .NonCollapsibleSession:hover {
+  color: #db6922;
+}
+.TalentAndRecruitment .SessionContent { border-bottom: 2px solid #00b2b9;}
+.TalentAndRecruitment h4,
+.TalentAndRecruitment .SessionCompanyName,
+.TalentAndRecruitment .fa-map-marker,
+.TalentAndRecruitment .fa-clock-o,
+.TalentAndRecruitment .NonCollapsibleSession:hover {
+  color: #00b2b9;
+}
+.SocialCollaboration .SessionContent { border-bottom: 2px solid #008743;}
+.SocialCollaboration h4,
+.SocialCollaboration .SessionCompanyName,
+.SocialCollaboration .fa-map-marker,
+.SocialCollaboration .fa-clock-o,
+.SocialCollaboration .NonCollapsibleSession:hover {
+  color: #008743;
+}
+.Labs .SessionContent { border-bottom: 2px solid #2f7dc1;}
+.Labs h4,
+.Labs .SessionCompanyName,
+.Labs .fa-map-marker,
+.Labs .fa-clock-o,
+.Labs .NonCollapsibleSession:hover {
+  color: #2f7dc1;
+}
+.RoundTable .SessionContent { border-bottom: 2px solid #2e3192;}
+.RoundTable h4,
+.RoundTable .SessionCompanyName,
+.RoundTable .fa-map-marker,
+.RoundTable .fa-clock-o,
+.RoundTable .NonCollapsibleSession:hover {
+  color: #2e3192;
+}
+.Compensation .SessionContent { border-bottom: 2px solid #ce181e;}
+.Compensation h4,
+.Compensation .SessionCompanyName,
+.Compensation .fa-map-marker,
+.Compensation .fa-clock-o,
+.Compensation .NonCollapsibleSession:hover {
+  color: #ce181e;
+}
+.CloudTech .SessionContent { border-bottom: 2px solid #8298cd;}
+.CloudTech h4,
+.CloudTech .SessionCompanyName,
+.CloudTech .fa-map-marker,
+.CloudTech .fa-clock-o,
+.CloudTech .NonCollapsibleSession:hover {
+  color: #8298cd;
+}
+.HRAnalytics .SessionContent { border-bottom: 2px solid #a155a1;}
+.HRAnalytics h4,
+.HRAnalytics .SessionCompanyName,
+.HRAnalytics .fa-map-marker,
+.HRAnalytics .fa-clock-o,
+.HRAnalytics .NonCollapsibleSession:hover {
+  color: #a155a1;
+}
+
+.UserAdoption .SessionContent { border-bottom: 2px solid #ff6666;}
+.UserAdoption h4,
+.UserAdoption .SessionCompanyName,
+.UserAdoption .fa-map-marker,
+.UserAdoption .fa-clock-o,
+.UserAdoption .NonCollapsibleSession:hover {
+  color: #ff6666;
+}
+
+.ProductDemo .SessionContent { border-bottom: 2px solid #cc3333;}
+.ProductDemo h4,
+.ProductDemo .SessionCompanyName,
+.ProductDemo .fa-map-marker,
+.ProductDemo .fa-clock-o,
+.ProductDemo .NonCollapsibleSession:hover {
+  color: #cc3333;
+}
+/*end Headline colors*/

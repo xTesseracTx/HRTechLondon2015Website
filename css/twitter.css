@@ -1,0 +1,212 @@
+/* Twitter Section */
+#twitter-widget-0 {
+	width: 100% !important;
+	border-radius: 0px;
+}
+#social-powered {
+	text-align: right;
+	position: absolute;
+	right: 20px;
+}
+
+/* Button */
+.btn {
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s;
+	border: 0;
+	padding: 8px 18px;
+	outline: 0;
+	display: inline-block;
+	margin-bottom: 0;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 6px 12px;
+	font-size: 18px;
+	line-height: 1.428571429;
+	border-radius: 0px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+/*** TWITTER***/
+
+.TwitterBoxHeader {
+	font-family:'Oswald', sans-serif;
+	font-weight:normal;
+	color:#fff;
+	
+}
+
+#twitter-container{
+	width:100%;
+	background:#07232d;
+	padding:30px;
+		
+	}
+#twitter-container h2 {
+	margin-bottom:10px;
+	}	
+#TwitterFollowUsContainer {
+	margin-left:0px; max-width:500px;
+}
+#TwitterHashtagList {
+	font-weight:300; font-size:30px; text-align:left; line-height:35px; color:#fff !important;
+}
+#twitterfollow-button{
+	width:100%;
+	margin: 0 auto;
+	/*margin-top:30px;*/
+	background:#106582;
+	border:2px solid #29a0c7;
+	color:white;
+	}
+#twitterfollow-button:hover {
+		background:#29a0c7;
+	}
+
+#tweetbox-text {
+margin-left:50px; 
+max-width:500px;
+}
+	
+#twitter-main-container{
+display:flex; flex-flow:row;
+-webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+	}
+#bird-text{
+max-width:740px; display:flex; flex-direction:row; margin:120px 120px 0 0;
+	}	
+#twitter-tirangle {
+width: 0; 
+	height: 0; 
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent; 
+	
+	border-right:15px solid #29a0c7; position:relative;  left:-14px; top:150px;
+	}		
+@media (max-width:1500px){
+	#twitter-main-container{
+display:flex; flex-flow:column-reverse;
+	}	
+#bird-text{
+	margin-top:40px;
+	}
+#twitter-tirangle {
+	width: 0; 
+	height: 0; 
+		border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #29a0c7; 
+    left:450px; top:435px;
+	}			
+	
+}
+
+
+@media (max-width:764px){
+
+#bird-text{
+	margin:40px 0 0 0;
+    display:block;
+	}	
+
+#tweetbox-text {
+margin-left:0; 
+}	
+	
+	
+#twitter-tirangle {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #29a0c7; 
+    left:310px; top:435px;
+	}	
+		
+.fa-twitter {
+	margin-left:190px;
+	
+   }
+}
+
+@media (max-width: 580px) {
+		.TwitterBoxHeader { font-size: 30px; }
+}
+
+@media (max-width:520px){
+
+	
+#twitter-tirangle {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #29a0c7; 
+    left:210px; top:435px;
+	}	
+	
+		.fa-twitter {
+	margin-left:85px;
+	
+   }	
+#TwitterHashtagList {
+	font-size: 19px;
+	line-height: 26px;
+}
+
+
+@media (max-width:400px){
+
+	
+#twitter-tirangle {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #29a0c7; 
+    left:140px; top:435px;
+	}
+	
+			.fa-twitter {
+	margin-left:70px;
+	
+   }		
+	
+}
+
+@media (max-width:320px){
+
+	
+#twitter-tirangle {
+	width: 0; 
+	height: 0; 
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-top: 20px solid #29a0c7; 
+    left:100px; top:435px;
+	}
+	#TwitterIconContainer {
+		text-align: center;
+	}
+	#TwitterIconContainer .fa-twitter{
+		margin-left: 0;
+	}
+}
+
+/***END TWITTER***/
+
+/*END Twitter Section */

@@ -1,0 +1,202 @@
+/* This CSS file contains the CSS definitions of the FOOTER section of the site */
+
+footer {
+    width: 100%;
+    background-color: #E5E5E5;
+}
+#GreyFooterContainer {
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+#GreyFooterHeader {
+    text-align: center;
+    font-family: "Oswald",sans-serif;
+    font-size: 3em;
+    padding-top: 25px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #808080;
+}
+.FooterSectionTitle {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-weight: 300;
+    color: #353535;
+}
+#LeftGreyFooterItems, #RightGreyFooterItems {
+    float: left;
+}
+#FollowUs, #HRNEvents, #FooterButtons, #GetInTouch {
+    float: left;
+    margin: 20px 0px 0px 20px;
+}
+/*Follow Us*/
+#FollowUsSocialIcons {
+    margin-top: 20px;
+}
+#FollowUsSocialIcons img {
+    width: 38px;
+    height: 38px;
+}
+/*end Follow Us*/
+
+/*HRN Events*/
+#HRNEvents {
+    width: 250px;
+    padding-left: 20px;
+}
+
+/*End HRN Events*/
+
+/*Footer Buttons*/
+.FooterButton {
+    width: 210px;
+    height: 45px;
+    padding-top: 15px;
+    margin-bottom: 8px;
+    background-color: #16aae1;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.FooterButton:hover {
+    background-color: #FC354C;
+}
+/*end Footer Buttons*/
+
+/*Get In Touch*/
+#GetInTouch {
+    margin-left: 50px;
+}
+.fa-phone {padding-right: 10px;}
+.fa-envelope {position: relative; top: 0px; padding-right: 7px;}
+#GeneralEnquiries, #HRNEventsList {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    color: #7f7f7f;
+    margin-top: 10px;
+}
+#HRNEventsList a {
+  color: #7f7f7f;
+  transition: all 0.3s
+}
+#HRNEventsList a:hover {
+  color: #16aae1;    
+}
+/*end Get In Touch*/
+
+#BlackFooterContainer {
+    width: 100%;
+    background-color: #202020;
+    padding: 10px;
+}
+#BlackFooterItems {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    color: #7f7f7f;
+    
+    display: -moz-flex;
+    -moz-justify-content: space-around;
+    -moz-align-items: center;
+    display: -webkit-flex;
+    -webkit-justify-content: space-around;
+    -webkit-align-items: center;    
+}
+#FooterHRNLogo, #Copyright, #Privacy {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+
+
+
+
+@media (max-width: 730px){
+    #BlackFooterItems {
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+        -moz-flex-wrap: wrap;
+        -moz-flex-direction: column;
+        -webkit-flex-wrap: wrap;
+        -webkit-flex-direction: column;
+    }
+    #Copyright, #Privacy {
+        margin: 15px 0;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:950px){
+    #LeftGreyFooterItems, #RightGreyFooterItems {
+        float: none;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        display: -moz-flex;
+        -moz-justify-content: center;
+        display: -webkit-flex;
+        -webkit-justify-content: center;         
+    }
+    #FooterButtons {
+        margin-left: -70px;
+    }
+    #GetInTouch {
+        margin-left: 30px;
+    }
+}
+@media (max-width: 580px){
+    #LeftGreyFooterItems, #RightGreyFooterItems {
+        float: left;
+        display: inline-block;
+    }
+    #FooterButtons {
+        margin-left: 20px;
+    }
+    #GetInTouch {
+        margin-left: 30px;
+    }    
+}
+@media (max-width:420px){
+    #FollowUs {
+        width: 100% !important;
+        margin-left: 0;
+        text-align: center;
+    }
+    #HRNEvents {
+        padding-left: 0;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    #FooterButtons {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    #GetInTouchButton, #RegisterNowButton {
+        margin: 8px auto;
+    }
+    #GetInTouch {
+        width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+    #GeneralEnquiries {
+        
+    }
+}

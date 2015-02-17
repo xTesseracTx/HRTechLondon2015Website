@@ -1,0 +1,416 @@
+/*CSS definitions of the SPEAKERS grid and the modals*/
+
+/*General defs of the SPEAKERS page*/
+body {
+  line-height: normal;
+}
+p {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-size: inherit;
+}
+a {
+  color: #000;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.RobotoText {
+  font-family: 'Roboto', sans-serif;
+}
+.OswaldText {
+  font-family: 'Oswald', sans-serif;
+}
+.HRNBlue {
+  color: #00a8c6;
+}
+.NoBlogsquadInfoBlack {
+  color: #323232;
+}
+/*END General defs of the SPEAKERS page*/
+
+/* Blogsquad */
+#BlogsquadHeaderContainer {
+  width: 100%;
+  background-image: url(../img/blogsquad/blogsquad-header.jpg);
+  background-position: top;
+  background-size: cover;
+  height: 285px;
+  margin-top: 85px;
+}
+@media (min-width:1921px){
+	#BlogsquadHeaderContainer {
+	  background-image: url(../img/blogsquad/blogsquad-header-4k.jpg);
+	}
+}
+@media (max-width: 718px) {
+	#BlogsquadHeaderContainer {
+	  margin-top: 65px;
+	}
+}
+#BlogsquadHeaderInnerContainer {
+	width: 100%;
+	max-width: 940px;
+	text-align: center;
+	margin: 0 auto;
+}
+#BlogsquadHeaderInnerContainer * { 
+	color: #fff; 
+	font-weight: 400;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+#BlogsquadHeaderInnerContainer h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 48px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+@media (max-width: 850px) {
+		#BlogsquadHeaderInnerContainer h1 {
+			padding-bottom: 20px;	
+		}
+}
+@media (max-width: 580px) {
+		#BlogsquadHeaderInnerContainer h1 {
+			padding-top: 20px;	
+		}
+}
+#BlogsquadHeaderInnerContainer p {
+	font-size: 24px;
+	line-height: 30px;
+	padding-bottom: 20px;
+}
+@media (max-width: 850px) {
+		#BlogsquadHeaderInnerContainer p {
+			padding-bottom: 10px;	
+		}
+}
+@media (max-width: 520px) {
+		#BlogsquadHeaderInnerContainer p {
+			font-size: 18px;	
+		}
+}
+#JoinTheBlogSquadButton {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+  padding: 4px 0px;
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+  background-color: rgba(252, 53, 76, 0.5);
+  border: 2px solid rgb(252, 53, 76);
+  transition: all 0.3s;
+}
+#JoinTheBlogSquadButton:hover {
+  background-color: rgba(252, 53, 76, 1);
+}
+
+/* Colors */
+.colored-stripe {
+	float: left;
+}
+/* End Colors */
+
+
+.tp-banner-container {
+	margin-top:100px;
+	}
+#StickySocialIconSidebar{
+	top:60%;
+	}
+#HeaderGetTicketsButton  {
+	top:2px;
+	padding-top:9px;
+	}	
+	
+#Blogsquads {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: space-between;
+  
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: center;
+  -webkit-align-items: space-between;
+  
+  display: -moz-flex;
+  -moz-flex-wrap: wrap;
+  -moz-justify-content: center;
+  -moz-align-items: space-between;
+}
+
+#BlogsquadHeadline	{
+	clear:both;
+	text-align:center;
+	font-family: 'Oswald', sans-serif;
+	margin-top:36px;
+	color:#2DAAE1;
+			
+}
+.Blogsquad {
+  width: 170px;
+  margin: 10px;
+}
+.BlogsquadPhoto{
+  width: 170px;
+  height: 170px;
+  background-size: cover;
+}
+.EventDetails {
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  text-align: center;
+  color: #fff;
+      transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+}
+.ViewProfile {
+	margin-top: 60px;
+	font-size: 16px;
+}
+
+.EventTitle     {padding-bottom: 15px;}
+.LongEventTitle {padding-bottom: 0px;}
+
+.Blogsquad:hover .EventDetails{
+  -webkit-backface-visibility: hidden;
+  opacity: 1;
+  visibility: visible;
+}
+.BlogsquadName {
+  font-size: 1.8em;
+  padding-top: 5px;
+  text-transform: uppercase;
+}
+.BlogsquadCompanyName {font-size: 1.2em;}
+
+/*-----MODAL DEFINITIONS------*/
+.modal-dialog  {margin-top: 60px;}
+.modal-content {border-radius: 0;}
+.modal-body    {background-color: #F5F5F5;}
+
+.close, .close:hover {
+  opacity: 1;
+  position: relative;
+  top: -40px;
+  right: -40px;
+}
+.ModalBlogsquadPhoto {
+  margin: 0 auto;
+  width: 170px;
+  height: 170px;
+  background-size: cover;
+}
+.ModalBlogsquadBioContainer {
+  text-align: center;
+  color: #323232;
+}
+.ModalBlogsquadName {
+  font-size: 4em;
+  text-transform: uppercase;
+  color: #323232;
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+.ModalBlogsquadJobtitle {
+  font-size: 1.8em;
+  font-weight: 300;
+}
+.ModalBlogsquadCompanyLink {
+  font-size: 1.8em;
+  font-weight: 400;
+  color: #00a8c6;
+}
+.ModalBlogsquadCompanyLink:hover {
+  color: #35B0E3;
+}
+.ModalDivider {
+  border-top: 1px solid #b3b3b3;
+  height: 1px;
+  margin: 20px auto 20px auto;
+  width: 40px;
+}
+.SocialIcons {display:inline;}
+.SocialIcons .fa {
+  font-size: 14px;
+  color: #fff;
+  background: #323232;
+  padding: 7px;
+  border-radius: 900px;
+  margin: 0 2px;
+}
+.SocialIcons .fa-facebook { padding: 7px 10px; }
+.SocialIcons .fa-facebook:hover {background: #3b5998;}
+.SocialIcons .fa-twitter:hover  {background: #4099ff;}
+.SocialIcons .fa-linkedin:hover {background: #0e76a8;}
+.SocialIcons .fa-google { padding: 8px 8px 6px 8px; }
+.SocialIcons .fa-google:hover {background: #1F48A9;}
+.SocialIcons .fa-flickr:hover {background: #FF0084;}
+.SocialIcons .fa-rss:hover {background: #C52C02;}
+.ModalBlogsquadBio {
+  font-size: 1.7em;
+  line-height: 1.7em;
+  font-weight: 300;
+  text-align: left;
+  padding: 25px;
+}
+.ModalBlogsquadBio a {
+  color: #00a8c6;
+}
+.ModalBlogsquadBio a:hover {
+  color: #35B0E3;
+}
+.ModalBlogsquadBioHighlight {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+.ModalBlogsquadBioHighlight:after {
+  content: ' ';
+  clear: right;
+  display: block;
+}
+@media(max-width:767px){
+  .modal-dialog {
+    margin: 0;
+    width: 100%;
+  }
+  .close, .close:hover {
+    top: 0px;
+    right: 0px;
+  }
+  .ModalBlogsquadBio {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}
+@media(max-width:380px){
+  .Blogsquad, .BlogsquadPhoto {
+    width: 120px;
+  }
+  .BlogsquadPhoto {
+    height: 120px;
+  }
+  .Blogsquad:hover .EventDetails{
+    visibility: hidden;
+    opacity: 0;
+  }
+  .close img {
+    width: 35px;
+    height: 35px;
+  }
+}
+/*----- END MODAL DEFINITIONS------*/
+/*END SPEAKERS*/
+
+/* Form */
+#BlogSquadFormContainer {
+  width: 100%;
+  background-image: url(../img/blogsquad/blogsquad-form-bg.jpg);
+  background-size: cover;
+}
+#BlogSquadFormInnerContainer {
+  width: 100%;
+  max-width: 960px;
+  padding: 50px 15px;
+  margin: 0 auto;
+}
+@media (max-width: 360px){
+  #BlogSquadFormInnerContainer {
+    padding: 50px 5px;
+  }
+}
+a#join-the-blog-squad {
+  position: relative;
+  top: -130px;
+}
+@media (max-width: 718px){
+  a#join-the-blog-squad {
+    top: -100px;
+  }  
+}
+#BlogSquadFormInnerContainer h1{
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'Oswald', sans-serif;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 50px;
+}
+form {
+  margin-bottom: 0; /* Overrides the default foundation margin-bottom value */
+}
+#first_name, #last_name, #email, #phone, #company, #title, #JoinBlogSquadButton {
+  width: 100%;
+  height: 55px;
+  font-size: 20px;
+}
+textarea {
+  height: 410px;
+  font-size: 20px;
+}
+#JoinBlogSquadButton {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  border: 0px;
+  background-color: #29A0C7;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+#JoinBlogSquadButton:hover {
+  background-color: #FC354C;
+}
+
+/* End Form */
+
+/*FOOTER ALIGNMENTS (because Foundation and Bootstrap uses the same ".row" named class..) */
+#blackfooter .row, #greyfooter-container .row {
+  max-width: 1480px;
+  margin-left: auto; margin-right: auto;
+}
+/*END FOOTER ALIGNMENTS*/
+
+/*Mobile menu margin for the content*/
+@media (max-width:640px){
+ .tp-banner-container, .tp-banner{
+	 display:none;
+	 visibility:hidden;
+	 } 
+  
+#Blogsquads {
+	margin-top:0;
+	}
+	  
+#BlogsquadHeadline	{
+	display:block;
+}	  
+}
+/*Mobile menu fa-bars button alignment*/
+.fa-bars {
+  position: relative;
+  top: -7px;
+}
+/*end Mobile menu fa-bars button alignment*/
+.FooterButton {
+  padding-top: 12px !important;
+}

@@ -1,0 +1,61 @@
+/* CSS definitions of the Expo pages */
+
+#MainContent {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	margin-top: 60px;
+	text-align: center;
+	padding: 0;
+}
+/* Onsite Navigation */
+#OnsiteNavContainer {
+	width: 100%;
+	max-width: 270px;
+	display: inline-block;
+	margin: 0 auto;
+	margin-right: 30px;
+	text-align: left;
+	float: left;
+}
+
+@media (max-width:640px) {
+#OnsiteNavContainer {
+	float: none;
+}
+}
+#OnsiteNavContainer ul {
+	list-style-type: none;
+}
+#OnsiteNavContainer ul li {
+	height: 80px;
+	padding: 10px 20px;
+	margin-left: 8px;
+}
+#OnsiteNavContainer ul li:hover, .OnsiteNavActive {
+	border: solid 1px #3b4a53;
+	border-left: solid 8px #18ade3;
+	background: #ececec;
+	margin-left: 0px !important;
+}
+#OnsiteNavContainer ul li img {
+	width: 59px;
+	height: 59px;
+	float: left;
+}
+#OnsiteNavContainer ul li div {
+	display: inline-block;
+	margin-left: 13px;
+	position: relative;
+	top: -5px;
+}
+#OnsiteNavContainer ul li div h4, #OnsiteNavContainer ul li div h6 {
+	color: #3b4a53;
+	font-family: 'Oswald', sans-serif;
+}
+#OnsiteNavContainer ul li div h4 {
+	font-size: 30px;
+}
+#OnsiteNavContainer ul li div h6 {
+	font-size: 18px;
+}

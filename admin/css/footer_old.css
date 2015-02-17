@@ -1,0 +1,348 @@
+/*
+ *
+ * This CSS file describes the
+ * FOOTER
+ * section of the HR Tech Amsterdam 2014 event
+ *
+*/
+
+/*GREY-FOOTER*/
+#grey-footer {
+  background-color: #e5e5e5;
+}
+#grey-footer-container {
+    max-width: 1000px;
+	margin: 0 auto;
+	padding: 0px 15px 10px 15px;
+}
+#grey-footer-header {
+  font-size: 30px;
+  text-align: center;
+  padding: 15px;
+  border-bottom: 1px solid #808080;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+#social-and-contact {
+    padding: 0px;
+    max-width: 1100px;
+    
+    display: flex;
+    flex-wrap: nowrap;
+    vertical-align: center;
+    
+    display: -moz-flex;
+    -moz-flex-wrap: nowrap;
+    -moz-vertical-align: center;
+    
+    display: -webkit-flex;
+    -webkit-flex-wrap: nowrap;
+    -webkit-vertical-align: center;
+}
+#social-and-contact h6{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: 'Oswald', sans-serif;
+    padding: 0;
+    margin-bottom: 25px;
+    text-align: left;
+    color: #353535;
+}
+#follow-us-footer {
+  width: 280px;
+}
+#follow-us-footer h6 {
+  font-family: 'Oswald', sans-serif !important;
+  font-size: 20px !important;
+  font-weight:300 !important;
+}
+
+#sign-up {
+  padding-right: 0;
+  padding-left: 0;
+  display: inline-block;
+}
+#sign-up .row { margin-left: 0; }
+#download-and-register {
+	width: 250px;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+#newsletter-grey-footer-field[placeholder], #mce-EMAIL[placeholder] {
+    padding-left: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+#newsletter-grey-footer-field, #mce-EMAIL {
+    height: 45px;
+    background-color: #f0f0f0;
+    border: 1px solid #808080;
+    font-weight: 300;
+    font-size: 20px;
+    width: 100%;
+}
+#footer-sign-up {
+  height: 45px;
+  position: static !important;
+  padding-left:0px !important;
+  padding-right:0px !important;
+  color: #fff;
+}
+.btn-secondary, .pagination > .active > a, ul.nav-pills > li.active > a {
+    background-color: #16aae1;
+}
+#footer-sing-up, #footer-download-brochure, #footer-register-now, #header-register-now {
+    font-size: 16px;
+    height: 45px;
+    padding-top: 10px;
+    
+}
+#footer-download-brochure:hover, #footer-register-now:hover, #header-register-now:hover {
+    font-size: 16px;
+    padding-top: 10px;
+}
+#footer-download-brochure, #footer-register-now {
+  color: #fff;
+  margin-bottom: 10px;
+}
+#footer-download-brochure:hover, #footer-register-now:hover, #footer-sign-up:hover {
+  background-color: #FC354C;
+}
+#footer-download-brochure, #footer-register-now, #header-register-now {
+    width: 210px;
+}
+#get-in-touch-mobile h6, #get-in-touch-desktop h6 {
+  margin-bottom: 15px;
+}
+#header-register-now {
+  height: 42px;
+}
+
+.general-inquiries {
+    font-size: 14px;
+    line-height: 22px;
+    color: #7f7f7f;
+}
+.footer-phone{
+    padding-right: 10px;
+}
+.footer-envelope{
+  position: relative;
+  top: 0px;
+}
+
+.header-socialicon {
+    width: 42px;
+    height: 42px;
+}
+GreyFooterSocialIconContainer {
+	display: flex;
+	flex-wrap: nowrap;	
+	justify-content: center;
+	
+	display: -webkit-flex;
+	-webkit-flex-wrap: nowrap;	
+	-webkit-justify-content: center;
+	
+	display: -moz-flex;
+	-moz-flex-wrap: nowrap;	
+	-moz-justify-content: center;	
+}
+.grey-footer-socialicon {
+	 width: 38px;
+    height: 38px;
+	margin-right:2px;
+	background-size:contain;
+	display: inline-block;
+	}
+
+@media (max-width:1080px){
+  #footer-download-brochure, #footer-register-now {
+    width: 100%;
+  }
+  #social-and-contact {
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    -moz-flex-wrap: wrap;
+    -moz-justify-content: space-around;
+    
+    -webkit-flex-wrap: wrap;
+    -webkit-justify-content: space-around; 
+  }
+  
+  #follow-us-footer {width: 350px;}
+  #sign-up {width: 350px;}
+  #download-and-register {width: 350px; padding: 0;}
+  #get-in-touch-desktop {width: 350px;}
+}
+
+#grey-footer-facebook, #header-facebook {
+    background-image: url(../img/header-facebook.png);
+}
+#grey-footer-twitter, #header-twitter {
+    background-image: url(../img/header-twitter.png);
+}
+#grey-footer-linkedin, #header-linkedin {
+    background-image: url(../img/header-linkedin.png);
+}
+#grey-footer-flickr, #header-flickr {
+    background-image: url(../img/header-flickr.png);
+}
+#grey-footer-slideshare, #header-slideshare {
+    background-image: url(../img/header-slideshare.png);
+}
+
+@media (max-width:991px) {
+  #follow-us-footer, #sign-up, #download-and-register, .get-in-touch {
+    padding-bottom: 10px;
+  }
+ 
+  #footer-download-brochure, #footer-register-now {
+    width: 100% !important;
+  }
+}
+@media (max-width:768px){
+    #social-and-contact {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    #sign-up, #download-and-register, .get-in-touch {
+    margin-bottom: 30px;
+    padding-bottom: 0px;
+    width: 100%;
+    margin-left: auto; margin-right: auto;
+  }
+  #sign-up {
+    margin-bottom: 0px;
+  }
+  #follow-us-footer {
+    margin: 0 auto 0px auto;
+  }
+  #GreyFooterSocialIconContainer {
+	width: 210px;
+	margin: 0 auto;
+  }
+  #follow-us-footer h6, #sign-up h6, #get-in-touch-mobile h6,
+  .general-inquiries {
+    text-align: center;
+  }
+  #download-and-register {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  .get-in-touch {
+    width: 200px;
+  }
+  #get-in-touch-desktop {
+    display: none;
+  }
+  #get-in-touch-mobile {
+    display: block !important;
+    margin-bottom: 0;
+  }
+  #footer-download-brochure, #footer-register-now {
+    width: 100%;
+  }
+  #newsletter-grey-footer-field, #footer-sign-up, #mce-EMAIL {
+    width: 100%;
+    position: static;
+  }
+  #newsletter-grey-footer-field {
+    margin-bottom: 10px;
+  }
+}
+
+
+/*END GREY-FOOTER*/
+
+/*COLORS-CONTAINER*/
+.colors-container {
+	width: 100%;
+	height: 8px;
+	padding: 0;
+	margin: 0;
+	clear: both;
+}
+.redbox {
+	width: 25%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	float: left;
+	background: #fc354c;
+}
+.orangebox {
+	width: 25%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	float: left;
+	background: #ff8e2d;
+}
+.greenbox {
+	width: 25%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	float: left;
+	background: #8fbe00;
+}
+.bluebox {
+	width: 25%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	float: left;
+	background: #29a0c7;
+}
+/*END COLOR-CONTAINER*/
+
+
+/*BLACK-FOOTER*/
+#black-footer {
+    background-color: #202020;
+    color: #7f7f7f;
+    padding: 25px 0 20px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+#black-footer-flex-container {
+    max-width: 1000px;
+    padding-left: 0 !important;
+    margin-left: auto; margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    
+    display: -moz-flex;
+    -moz-justify-content: space-between;
+    
+    display: -webkit-flex;
+    -webkit-justify-content: space-between;
+}
+#black-footer > *{
+    padding-left: 0;
+}
+#black-footer-copyright, #black-footer-privacy-policy, #black-footer-terms-and-conditions {
+    margin-top: 17px;    
+}
+
+@media (max-width:980px){
+    #black-footer > *{
+        padding-left: 15px;
+        text-align: center;
+    }
+    #black-footer-privacy-policy {
+        border-right: none;
+    }
+}
+@media(max-width:768px){
+  #black-footer-flex-container {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+  }
+}
+/*END BLACK-FOOTER*/

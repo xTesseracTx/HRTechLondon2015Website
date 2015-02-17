@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Sponsor Appendencies"
+AuthUserFile /www/virtual/tesseract/london.hrtecheurope.com/sponsor-appendencies/.htpasswd
+Require valid-user
